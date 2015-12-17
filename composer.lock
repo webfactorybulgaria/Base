@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32aabc51b0141cf062df45a9dde68c5e",
-    "content-hash": "08ef71a4e7dbf646de6408ba13d4b244",
+    "hash": "9901cbc2a7c315ba283d847ac7d0f41b",
+    "content-hash": "13b6cbadd9c3100fc20db9c66eb1a259",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -2706,16 +2706,16 @@
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.0.0",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "ec1e51cdf07ed7240917ea6342087ac746a559c5"
+                "reference": "75223ce3e67c2aa5745dfd24a80b7bfcd62371ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/ec1e51cdf07ed7240917ea6342087ac746a559c5",
-                "reference": "ec1e51cdf07ed7240917ea6342087ac746a559c5",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/75223ce3e67c2aa5745dfd24a80b7bfcd62371ee",
+                "reference": "75223ce3e67c2aa5745dfd24a80b7bfcd62371ee",
                 "shasum": ""
             },
             "require": {
@@ -2741,7 +2741,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-12-11 10:20:51"
+            "time": "2015-12-17 09:33:28"
         },
         {
             "name": "webfactorybulgaria/dashboard",
@@ -3037,16 +3037,16 @@
         },
         {
             "name": "webfactorybulgaria/pages",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "992dac22903012899b80555af6d7c5a5172e7685"
+                "reference": "660f3caf2574c5c969ca9a0b7081ffcc1223ad73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/992dac22903012899b80555af6d7c5a5172e7685",
-                "reference": "992dac22903012899b80555af6d7c5a5172e7685",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/660f3caf2574c5c969ca9a0b7081ffcc1223ad73",
+                "reference": "660f3caf2574c5c969ca9a0b7081ffcc1223ad73",
                 "shasum": ""
             },
             "require": {
@@ -3068,7 +3068,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2015-12-11 22:32:44"
+            "time": "2015-12-17 12:45:30"
         },
         {
             "name": "webfactorybulgaria/settings",
@@ -4016,16 +4016,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.19",
+            "version": "4.8.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4"
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b2caaf8947aba5e002d42126723e9d69795f32b4",
-                "reference": "b2caaf8947aba5e002d42126723e9d69795f32b4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea76b17bced0500a28098626b84eda12dbcf119c",
+                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c",
                 "shasum": ""
             },
             "require": {
@@ -4084,7 +4084,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-11-30 08:18:59"
+            "time": "2015-12-12 07:45:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
