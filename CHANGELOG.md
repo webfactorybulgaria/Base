@@ -1,6 +1,30 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.6.0 - 2016-01-03
+
+### Added
+- Command typicms:publish {module} to move a module from vendor directory to the Modules directory.
+- Added a button to clear latest changes in dashboard.
+- TypiCMS now require Laravel 5.2.
+
+### Fixed
+- Old value are preserved in tags and date fields when a form has errors.
+- When Tags module was loaded, there was a query to get all tags on every requests.
+- API GET methods are now protected.
+- Find nearest address is repaired in Places module.
+
+### Removed
+- TypiCMS@logo(), TypiCMS@logoOrTitle() method.
+- Methods previously marked @deprecated are removed.
+- Menulinks module has been merged with Menus.
+
+## 2.5.21 - 2015-12-19
+
+### Fixed
+- Disabling all "Online" languages throws error #38.
+BREAKING CHANGE: in app/Http/Kernel.php, move PublicLocale middleware from $middleware to $routeMiddleware array.
+
 ## 2.5.18 - 2015-12-15
 
 ### Added

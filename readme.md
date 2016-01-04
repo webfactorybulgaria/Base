@@ -5,7 +5,7 @@
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
 
-TypiCMS is a multilingual content management system built with [Laravel 5](http://laravel.com).
+TypiCMS is a modular multilingual content management system built with [Laravel 5.2](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?1)
 
@@ -139,6 +139,8 @@ This example is for the News module. After these steps, the module will appear i
 
 ## Modules
 
+Each module can be published in order to be modified and tracked by git. Here is more info on [publishing a module](#publish-a-module).
+
 ### Pages
 
 Pages are nestable with drag and drop, on drop, URIs are generated and saved in the database.
@@ -225,35 +227,62 @@ Check available methods in each module’s repository.
 
 ## Artisan commands
 
-Commands are located in app/TypiCMS/Commands
+Commands are located in **/vendor/typicms/core/src/Commands**
 
-* Installation of TypiCMS
+### Installation of TypiCMS
 
-  ```
-  php artisan typicms:install
-  ```
+```
+php artisan typicms:install
+```
 
-* Set cache key prefix in app/config/cache.php
+### Set cache key prefix in app/config/cache.php
 
-  ```
-  php artisan cache:prefix yourCachePrefix
-  ```
+```
+php artisan cache:prefix yourCachePrefix
+```
 
-* Initial migration and seed
+This command is triggered by ```typicms:install```
 
-  ```
-  php artisan typicms:database
-  ```
+### Initial migration and seed
 
-* Clean the directory public/html
+```
+php artisan typicms:database
+```
 
-  ```
-  php artisan clear-html
-  ```
+This command is triggered by ```typicms:install```
+
+### Clean the directory public/html
+
+```
+php artisan clear-html
+```
+
+### Publish a module
+
+If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
+The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module **Pages** will be published by running this command:
+
+```
+php artisan typicms:publish pages
+```
+
+These steps will be executed:
+
+1. Publishing of views and migrations for Pages module.
+2. Copying of everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
+3. Running ```composer remove typicms/pages```.
+
+When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
 
 ##Upgrade instructions
 
-###Upgrade from 2.4.34 to TypiCMS 2.5.7
+###Upgrade from 2.5.x to 2.6.x
+
+- Follows the steps needed to [upgrade to Laravel 5.2](https://laravel.com/docs/5.2/upgrade#upgrade-5.2.0)
+- If you have customs modules in /Modules directory, you will have to add missing methods in adminControllers and apiControllers and setup [implicit model binding](https://laravel.com/docs/5.2/routing#route-model-binding).
+- ```logo`` and/or ```logoOrTitle``` methods are removed, in public master.blade.php, update with recent changes made to version 2.6.
+
+###Upgrade from 2.4.34 to 2.5.7
 
 Create an empty writable directory **public/html**, add in it a **.gitignore** file with this content :
 

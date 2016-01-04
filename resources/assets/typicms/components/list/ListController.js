@@ -67,6 +67,22 @@
             };
 
             /**
+             * Clear history
+             */
+            $scope.clearHistory = function () {
+                if (window.confirm('Are you sure you want to clear history?')) {
+                    $api.delete().$promise.then(
+                        function () {
+                            $scope.displayedModels = [];
+                        },
+                        function (reason) {
+                            alertify.error('Error ' + reason.status + ' ' + reason.statusText);
+                        }
+                    );
+                }
+            };
+
+            /**
              * Update model
              */
             $scope.update = function (model) {
@@ -98,9 +114,12 @@
                 }
                 var index = $scope.models.indexOf(model);
                 $api.delete({id: model.id},
-                    function () {
+                    function (data) {
                         if (index !== -1) {
                             $scope.models.splice(index, 1);
+                        }
+                        if (data.error) {
+                            alertify.error('Error');
                         }
                     },
                     function (reason) {
@@ -123,9 +142,17 @@
                 if (!window.confirm('Supprimer « ' + title + ' » ?')) {
                     return false;
                 }
-                $api.delete({id: scope.model.id}, function () {
-                    scope.remove();
-                });
+                $api.delete({id: scope.model.id},
+                    function (data) {
+                        scope.remove();
+                        if (data.error) {
+                            alertify.error('Error');
+                        }
+                    },
+                    function (reason) {
+                        alertify.error('Error ' + reason.status + ' ' + reason.statusText);
+                    }
+                );
             };
 
             $scope.treeOptions = {
