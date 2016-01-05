@@ -1,6 +1,5 @@
 {
-    "name": "webfactorybulgaria/webfactorybulgaria",
-    "replace": {"webfactorybulgaria/base": "self.version"},
+    "name": "webfactorybulgaria/base",
     "description": "Multilingual CMS built with Laravel 5",
     "keywords": ["cms", "multilingual", "laravel", "typi", "admintool4", "webfactorybulgaria"],
     "license": "MIT",
