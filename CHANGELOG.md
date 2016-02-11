@@ -1,6 +1,31 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 2.7.5 - 2016-02-08
+
+### Changed
+- Possibility to show every languages in a form.
+
+### Breaking change
+- Replace file /resources/assets/js/admin/set-content-locale.js with https://github.com/TypiCMS/TypiCMS/blob/master/resources/assets/js/admin/set-content-locale.js
+- Add 'languages.all' key in /resources/lang/*/global.php
+
+## 2.7.3 - 2016-02-05
+
+### Changed
+- Angular 1.5, CKEditor 4.5.7, jQuery 2.2.0 (Drop IE 8 support).
+
+## 2.7.0 - 2016-02-04
+
+### Changed
+- Translatable fields are grouped by fields, not by locale, TypiCMS now use Propaganistas\LaravelTranslatableBootForms.
+- Bower is removed from TypiCMS.
+
+## 2.6.6 - 2016-01-13
+
+### Fixed
+- Bug with PHP < 7 in history module.
+
 ## 2.6.3 - 2016-01-06
 
 ### Added

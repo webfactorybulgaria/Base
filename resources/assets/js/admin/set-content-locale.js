@@ -13,8 +13,19 @@ $(function () {
             alertify.error('Content locale couldn’t be set to ' + locale);
         });
     }
-    $('#locale-changer a').on('click', function () {
-        setContentLocale($(this).data('locale'));
+
+    $('.btn-lang-js').click(function (e) {
+        var locale = $(this).data('locale');
+        $(this).addClass('active').siblings().removeClass('active');
+        if (locale == 'all') {
+            $('.form-group-translation').show();
+        } else {
+            $('.form-group-translation').hide().has('[data-language="'+locale+'"]').show();
+        }
+        $('#active-locale').text(window.TypiCMS.locales[locale].long);
+        setContentLocale(locale);
+        e.preventDefault();
     });
+    $('.btn-lang-js.active').trigger('click');
 
 });

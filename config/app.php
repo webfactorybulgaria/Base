@@ -159,6 +159,7 @@ return [
         /*
          * Vendor Service Providers...
          */
+        AdamWathan\BootForms\BootFormsServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Bkwld\Croppa\ServiceProvider::class,
         Cviebrock\ImageValidator\ImageValidatorServiceProvider::class,
@@ -166,17 +167,20 @@ return [
         Krucas\Notification\NotificationServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
-
-        /*
-         * TypiCMS Modules Service Providers...
-         */
+        Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*
-         * TypiCMS Service Providers...
+         * TypiCMS Modules Service Providers.
+         * Here is the place for your modules,
+         * they should be set before Core Service provider.
+         */
+        // TypiCMS\Modules\News\Providers\ModuleProvider::class,
+
+        /*
+         * TypiCMS Core Service Provider...
          */
         TypiCMS\Modules\Core\Providers\ModuleProvider::class,
-        TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,
     ],
 
     /*
@@ -223,15 +227,16 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'FileUpload'      => TypiCMS\Modules\Core\Facades\FileUpload::class,
-        'TypiCMS'         => TypiCMS\Modules\Core\Facades\TypiCMS::class,
+        'FileUpload'           => TypiCMS\Modules\Core\Facades\FileUpload::class,
+        'TypiCMS'              => TypiCMS\Modules\Core\Facades\TypiCMS::class,
 
-        'Debugbar'        => Barryvdh\Debugbar\Facade::class,
-        'BootForm'        => AdamWathan\BootForms\Facades\BootForm::class,
-        'Form'            => AdamWathan\Form\Facades\Form::class,
-        'Croppa'          => Bkwld\Croppa\Facade::class,
-        'Notification'    => Krucas\Notification\Facades\Notification::class,
-        'Translatable'    => Dimsav\Translatable\Translatable::class,
+        'Debugbar'             => Barryvdh\Debugbar\Facade::class,
+        'BootForm'             => AdamWathan\BootForms\Facades\BootForm::class,
+        'Form'                 => AdamWathan\Form\Facades\Form::class,
+        'Croppa'               => Bkwld\Croppa\Facade::class,
+        'Notification'         => Krucas\Notification\Facades\Notification::class,
+        'Translatable'         => Dimsav\Translatable\Translatable::class,
+        'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,
 
     ],
 

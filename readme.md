@@ -14,7 +14,7 @@ TypiCMS is a modular multilingual content management system built with [Laravel 
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-  - [npm, Bower & Gulp](#npm-bower--gulp)
+  - [npm & Gulp](#npm--gulp)
   - [Configuration](#configuration)
   - [Installation of a module](#installation-of-a-module)
 - [Modules](#modules)
@@ -69,7 +69,7 @@ This kind of URLs are managed by the CMS:
 
 ## Installation
 
-First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com)
+First install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com)
 
 1. Create a new project
 
@@ -81,7 +81,7 @@ First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](
    ```
    cd mywebsite
    ```
-3. DB migration and seed, user creation, npm installation, bower installation and directory rights
+3. DB migration and seed, user creation, npm installation and directory rights
 
    ```
    php artisan typicms:install
@@ -89,24 +89,19 @@ First install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](
 
 Go to http://mywebsite.local/admin and log in.
 
-### npm, Bower & Gulp
+### npm & Gulp
 
-In order to work on assets, you need to install [Node.js](http://nodejs.org), [Bower](http://bower.io) and [gulp](http://gulpjs.com), then cd to your website folder and run these commands:
+In order to work on assets, you need to install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com), then cd to your website folder and run these commands:
 
-1. Install bower packages according to bower.json (directory **bower_components**)
-
-   ```
-   bower install
-   ```
-2. Install gulp packages according to gulpfile.js (directory **node_modules**)
+1. Install gulp packages according to gulpfile.js (directory **node_modules**)
 
    ```
    npm install
    ```
-3. Compile admin and public assets
+2. Compile admin and public assets
 
    ```
-   gulp
+   gulp all
    ```
 
 ### Configuration
@@ -301,6 +296,19 @@ php artisan typicms:create cats
 ```
 
 ##Upgrade instructions
+
+###Upgrade from 2.6.x to 2.7.x
+
+- In **config/app.php**:
+  - remove ```TypiCMS\TranslatableBootForms\TranslatableBootFormsServiceProvider::class,```;
+  - add ```AdamWathan\BootForms\BootFormsServiceProvider::class,``` to the providers list;
+  - add ```Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,``` to the providers list;
+  - add ```'TranslatableBootForm' => Propaganistas\LaravelTranslatableBootForms\Facades\TranslatableBootForm::class,``` to the aliases list.
+- Run ```composer require propaganistas/laravel-translatable-bootforms```.
+- Run ```composer remove typicms/translatablebootforms```.
+- In composer.json, change version of all typicms modules from ~2.6.0 to ~2.7.0.
+- Run ```composer update```.
+- Remove **resources/vendor/*/admin** directories, republish them if needed.
 
 ###Upgrade from 2.5.x to 2.6.x
 
