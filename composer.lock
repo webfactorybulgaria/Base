@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bdebdc6ea145fbd3b329894a682c48d9",
-    "content-hash": "cc359c31536ef6b50a9c34ae033b3f03",
+    "hash": "dfba3f8d1cadcb58db4bfb4ba3c54caf",
+    "content-hash": "b2a1d092f7aca2cb41586e404aef0264",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -348,7 +348,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2015-10-18 12:22:57"
+            "time": "2016-01-19 19:42:08"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2738,544 +2738,6 @@
             "time": "2016-01-07 13:38:51"
         },
         {
-            "name": "webfactorybulgaria/blocks",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Blocks.git",
-                "reference": "810ea516ff9f8a4eeaab9ab629ba1d2a1e90b9a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/810ea516ff9f8a4eeaab9ab629ba1d2a1e90b9a5",
-                "reference": "810ea516ff9f8a4eeaab9ab629ba1d2a1e90b9a5",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Blocks\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-04 10:10:11"
-        },
-        {
-            "name": "webfactorybulgaria/core",
-            "version": "v4.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "531f39f90f5efbe68ba976447ffd1c0fa473ec86"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/531f39f90f5efbe68ba976447ffd1c0fa473ec86",
-                "reference": "531f39f90f5efbe68ba976447ffd1c0fa473ec86",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~5.2.0",
-                "webfactorybulgaria/objects": "~4.0.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "~2.1",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Core\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-11 08:17:03"
-        },
-        {
-            "name": "webfactorybulgaria/dashboard",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Dashboard.git",
-                "reference": "e89fcf0929e54defafddc2e5d41d229f1ec71585"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/e89fcf0929e54defafddc2e5d41d229f1ec71585",
-                "reference": "e89fcf0929e54defafddc2e5d41d229f1ec71585",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Dashboard\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-04 10:17:43"
-        },
-        {
-            "name": "webfactorybulgaria/files",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Files.git",
-                "reference": "ec3054fc6b516a14b05fe02e9a956f311db2bb2f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/ec3054fc6b516a14b05fe02e9a956f311db2bb2f",
-                "reference": "ec3054fc6b516a14b05fe02e9a956f311db2bb2f",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Files\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:02:46"
-        },
-        {
-            "name": "webfactorybulgaria/galleries",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Galleries.git",
-                "reference": "9b6740edde1883480ace1d2cd5e28d1240284c1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/9b6740edde1883480ace1d2cd5e28d1240284c1a",
-                "reference": "9b6740edde1883480ace1d2cd5e28d1240284c1a",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Galleries\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:04:23"
-        },
-        {
-            "name": "webfactorybulgaria/groups",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Groups.git",
-                "reference": "65844ee7c037d3177fce985396747d37c184bb92"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Groups/zipball/65844ee7c037d3177fce985396747d37c184bb92",
-                "reference": "65844ee7c037d3177fce985396747d37c184bb92",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Groups\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:07:07"
-        },
-        {
-            "name": "webfactorybulgaria/history",
-            "version": "v4.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/History.git",
-                "reference": "51278654c901d2ddd9c2893a360f6e090a5e689d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/51278654c901d2ddd9c2893a360f6e090a5e689d",
-                "reference": "51278654c901d2ddd9c2893a360f6e090a5e689d",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\History\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-11 09:32:31"
-        },
-        {
-            "name": "webfactorybulgaria/menus",
-            "version": "v4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Menus.git",
-                "reference": "ce80a48052615f9a161a494a9c63ae7f8749136a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/ce80a48052615f9a161a494a9c63ae7f8749136a",
-                "reference": "ce80a48052615f9a161a494a9c63ae7f8749136a",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0",
-                "webfactorybulgaria/menulinks": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Menus\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:10:57"
-        },
-        {
-            "name": "webfactorybulgaria/nestablecollection",
-            "version": "v4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/NestableCollection.git",
-                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/NestableCollection/zipball/2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
-                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "~4.2.0|~5.0",
-                "illuminate/support": "~4.2.0|~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "description": "A Laravel Package that extends Collection to handle unlimited nested items following adjacency list model.",
-            "keywords": [
-                "TypiCMS",
-                "adjacency list",
-                "collection",
-                "eloquent",
-                "laravel",
-                "nested set",
-                "tree"
-            ],
-            "time": "2015-12-11 12:47:24"
-        },
-        {
-            "name": "webfactorybulgaria/objects",
-            "version": "v4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Objects.git",
-                "reference": "5765c02cb5c7c600c49cec587d14e2cfd8ab3a66"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/5765c02cb5c7c600c49cec587d14e2cfd8ab3a66",
-                "reference": "5765c02cb5c7c600c49cec587d14e2cfd8ab3a66",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "~5.2.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-06 09:23:38"
-        },
-        {
-            "name": "webfactorybulgaria/pages",
-            "version": "v4.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "84b8dc4da42b03ef24e6f0c3919a73781d380a59"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/84b8dc4da42b03ef24e6f0c3919a73781d380a59",
-                "reference": "84b8dc4da42b03ef24e6f0c3919a73781d380a59",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Pages\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-11 08:15:32"
-        },
-        {
-            "name": "webfactorybulgaria/settings",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Settings.git",
-                "reference": "57230d49f007db7ca7507863b7d5cbc4a87ce36f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/57230d49f007db7ca7507863b7d5cbc4a87ce36f",
-                "reference": "57230d49f007db7ca7507863b7d5cbc4a87ce36f",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Settings\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:16:35"
-        },
-        {
-            "name": "webfactorybulgaria/sitemap",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Sitemap.git",
-                "reference": "c4b89e4b655f8ddc4d97a62eb386d457f675ee8f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/c4b89e4b655f8ddc4d97a62eb386d457f675ee8f",
-                "reference": "c4b89e4b655f8ddc4d97a62eb386d457f675ee8f",
-                "shasum": ""
-            },
-            "require": {
-                "roumen/sitemap": "~2.5.8",
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Sitemap\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:20:18"
-        },
-        {
-            "name": "webfactorybulgaria/translations",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Translations.git",
-                "reference": "77141602962c0d28e1e0dd787c3dcb17f95e5793"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/77141602962c0d28e1e0dd787c3dcb17f95e5793",
-                "reference": "77141602962c0d28e1e0dd787c3dcb17f95e5793",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Translations\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-05 09:22:13"
-        },
-        {
-            "name": "webfactorybulgaria/users",
-            "version": "v4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Users.git",
-                "reference": "52099c46b56c25cb96fe9b65bf10e5651152e213"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/52099c46b56c25cb96fe9b65bf10e5651152e213",
-                "reference": "52099c46b56c25cb96fe9b65bf10e5651152e213",
-                "shasum": ""
-            },
-            "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TypiCMS\\Modules\\Users\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samuel De Backer",
-                    "email": "sdebacker@gmail.com"
-                }
-            ],
-            "time": "2016-01-19 13:46:27"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v2.2.0",
             "source": {
@@ -3325,6 +2787,579 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "webfactorybulgaria/blocks",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Blocks.git",
+                "reference": "e8685202391e1cb0fee04427c310f6e04d4875a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/e8685202391e1cb0fee04427c310f6e04d4875a5",
+                "reference": "e8685202391e1cb0fee04427c310f6e04d4875a5",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Blocks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 09:45:26"
+        },
+        {
+            "name": "webfactorybulgaria/core",
+            "version": "v4.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Core.git",
+                "reference": "e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5",
+                "reference": "e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.2.0",
+                "webfactorybulgaria/objects": "~4.0.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-18 08:01:56"
+        },
+        {
+            "name": "webfactorybulgaria/dashboard",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Dashboard.git",
+                "reference": "363da2970b53105db636ed03911e11298edad185"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/363da2970b53105db636ed03911e11298edad185",
+                "reference": "363da2970b53105db636ed03911e11298edad185",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Dashboard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 09:52:29"
+        },
+        {
+            "name": "webfactorybulgaria/files",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Files.git",
+                "reference": "1068f572c6f3d130688ee7b9bcd1e894799da98c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/1068f572c6f3d130688ee7b9bcd1e894799da98c",
+                "reference": "1068f572c6f3d130688ee7b9bcd1e894799da98c",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Files\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 09:54:08"
+        },
+        {
+            "name": "webfactorybulgaria/galleries",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Galleries.git",
+                "reference": "141944c64a3716663e343c629408a6ac3d3be04f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/141944c64a3716663e343c629408a6ac3d3be04f",
+                "reference": "141944c64a3716663e343c629408a6ac3d3be04f",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Galleries\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 09:55:01"
+        },
+        {
+            "name": "webfactorybulgaria/groups",
+            "version": "v4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Groups.git",
+                "reference": "52aed3446b8a957fd6bcdd4bc8db5103027101ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Groups/zipball/52aed3446b8a957fd6bcdd4bc8db5103027101ef",
+                "reference": "52aed3446b8a957fd6bcdd4bc8db5103027101ef",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Groups\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-18 08:07:13"
+        },
+        {
+            "name": "webfactorybulgaria/history",
+            "version": "v4.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/History.git",
+                "reference": "4a88151459ba17b55cf28640fdea582fc46019b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/4a88151459ba17b55cf28640fdea582fc46019b1",
+                "reference": "4a88151459ba17b55cf28640fdea582fc46019b1",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\History\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 10:00:09"
+        },
+        {
+            "name": "webfactorybulgaria/menulinks",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Menulinks.git",
+                "reference": "092daff47256951549b59040530a7a1d11d6f794"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Menulinks/zipball/092daff47256951549b59040530a7a1d11d6f794",
+                "reference": "092daff47256951549b59040530a7a1d11d6f794",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Menulinks\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-01-05 09:09:46"
+        },
+        {
+            "name": "webfactorybulgaria/menus",
+            "version": "v4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Menus.git",
+                "reference": "fe52964d365a2c5e1f4698aeb09962774b442bc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/fe52964d365a2c5e1f4698aeb09962774b442bc4",
+                "reference": "fe52964d365a2c5e1f4698aeb09962774b442bc4",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0",
+                "webfactorybulgaria/menulinks": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Menus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 10:03:54"
+        },
+        {
+            "name": "webfactorybulgaria/nestablecollection",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/NestableCollection.git",
+                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/NestableCollection/zipball/2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
+                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~4.2.0|~5.0",
+                "illuminate/support": "~4.2.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package that extends Collection to handle unlimited nested items following adjacency list model.",
+            "keywords": [
+                "TypiCMS",
+                "adjacency list",
+                "collection",
+                "eloquent",
+                "laravel",
+                "nested set",
+                "tree"
+            ],
+            "time": "2015-12-11 12:47:24"
+        },
+        {
+            "name": "webfactorybulgaria/objects",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Objects.git",
+                "reference": "1070872a57bb77437ffdf7d9e99cb9f21cbc2eed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/1070872a57bb77437ffdf7d9e99cb9f21cbc2eed",
+                "reference": "1070872a57bb77437ffdf7d9e99cb9f21cbc2eed",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.2.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 10:06:08"
+        },
+        {
+            "name": "webfactorybulgaria/pages",
+            "version": "v4.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Pages.git",
+                "reference": "b43310faaf673303b46f6d5eb078111e47a98cab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/b43310faaf673303b46f6d5eb078111e47a98cab",
+                "reference": "b43310faaf673303b46f6d5eb078111e47a98cab",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Pages\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-10 10:21:22"
+        },
+        {
+            "name": "webfactorybulgaria/settings",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Settings.git",
+                "reference": "f525285fd20a715e73dbc6730f3d9e561dfabb33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/f525285fd20a715e73dbc6730f3d9e561dfabb33",
+                "reference": "f525285fd20a715e73dbc6730f3d9e561dfabb33",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-11 08:59:31"
+        },
+        {
+            "name": "webfactorybulgaria/sitemap",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Sitemap.git",
+                "reference": "241d2a1b63e013415d74df761842664afa330ec5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/241d2a1b63e013415d74df761842664afa330ec5",
+                "reference": "241d2a1b63e013415d74df761842664afa330ec5",
+                "shasum": ""
+            },
+            "require": {
+                "roumen/sitemap": "~2.5.8",
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Sitemap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-11 09:00:25"
+        },
+        {
+            "name": "webfactorybulgaria/translations",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Translations.git",
+                "reference": "3a71d2bc952226c8d3fa6a90ad3df8c55b95e675"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/3a71d2bc952226c8d3fa6a90ad3df8c55b95e675",
+                "reference": "3a71d2bc952226c8d3fa6a90ad3df8c55b95e675",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Translations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-11 09:04:28"
+        },
+        {
+            "name": "webfactorybulgaria/users",
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Users.git",
+                "reference": "cf51b72b40d2f96fcaf3c7535b6ad42f0fd2dbc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/cf51b72b40d2f96fcaf3c7535b6ad42f0fd2dbc0",
+                "reference": "cf51b72b40d2f96fcaf3c7535b6ad42f0fd2dbc0",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "~4.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Users\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-02-11 09:05:14"
         },
         {
             "name": "weotch/phpthumb",
