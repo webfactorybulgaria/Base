@@ -9,20 +9,20 @@
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.7.1",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "9da18932543690d98e45dd684f5acd8bb9a86349"
+                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/9da18932543690d98e45dd684f5acd8bb9a86349",
-                "reference": "9da18932543690d98e45dd684f5acd8bb9a86349",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
+                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/form": "~0.7.1",
+                "adamwathan/form": "^0.8",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -47,30 +47,30 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2015-12-08 16:07:27"
+            "time": "2016-02-11 20:17:34"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.7.2",
+            "version": "v0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e"
+                "reference": "4ea288c2f7048fc28d0d5b147c321eeac7cac53e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e",
-                "reference": "e99a0a046d150adb1b2ef6b1fb1ab73b51d2929e",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/4ea288c2f7048fc28d0d5b147c321eeac7cac53e",
+                "reference": "4ea288c2f7048fc28d0d5b147c321eeac7cac53e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "illuminate/support": "4.*",
                 "mockery/mockery": "~0.9",
                 "phpunit/phpunit": "3.7.*",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -89,27 +89,27 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2015-08-07 18:04:49"
+            "time": "2016-02-19 21:50:34"
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "974fd16e328ca851a081449100d9509af59cf0ff"
+                "reference": "13b7058d2120c8d5af7f1ada21b7c44dd87b666a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/974fd16e328ca851a081449100d9509af59cf0ff",
-                "reference": "974fd16e328ca851a081449100d9509af59cf0ff",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/13b7058d2120c8d5af7f1ada21b7c44dd87b666a",
+                "reference": "13b7058d2120c8d5af7f1ada21b7c44dd87b666a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0.17|5.1.*|5.2.*",
+                "illuminate/support": "5.1.*|5.2.*",
                 "maximebf/debugbar": "~1.11.0",
-                "php": ">=5.4.0",
-                "symfony/finder": "~2.6|~3.0"
+                "php": ">=5.5.9",
+                "symfony/finder": "~2.7|~3.0"
             },
             "type": "library",
             "extra": {
@@ -143,7 +143,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-12-22 06:22:38"
+            "time": "2016-02-17 08:32:21"
         },
         {
             "name": "bkwld/croppa",
@@ -613,16 +613,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
                 "shasum": ""
             },
             "require": {
@@ -667,7 +667,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-01-23 01:23:02"
+            "time": "2016-02-18 21:54:00"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -948,16 +948,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.15",
+            "version": "v5.2.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "78fafb78d35c617e24630f4e099746effc42c787"
+                "reference": "d4ff9a1e3e9b2f99f8f3e957876e343d804d944f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/78fafb78d35c617e24630f4e099746effc42c787",
-                "reference": "78fafb78d35c617e24630f4e099746effc42c787",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d4ff9a1e3e9b2f99f8f3e957876e343d804d944f",
+                "reference": "d4ff9a1e3e9b2f99f8f3e957876e343d804d944f",
                 "shasum": ""
             },
             "require": {
@@ -1072,20 +1072,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-02-12 14:59:18"
+            "time": "2016-02-19 17:58:28"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.16",
+            "version": "1.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031"
+                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/183e1a610664baf6dcd6fceda415baf43cbdc031",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
+                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
                 "shasum": ""
             },
             "require": {
@@ -1098,8 +1098,7 @@
                 "ext-fileinfo": "*",
                 "mockery/mockery": "~0.9",
                 "phpspec/phpspec": "^2.2",
-                "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.8"
+                "phpunit/phpunit": "~4.8 || ~5.0"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1156,7 +1155,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-12-19 20:16:43"
+            "time": "2016-02-19 15:35:38"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -1536,20 +1535,20 @@
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
-            "version": "1.1.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Propaganistas/Laravel-Translatable-Bootforms.git",
-                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295"
+                "reference": "ebb14c8079cce0b77241f0e5d768c2a24fe81f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/999c536a975a0f974020bbae5b15cf2cd6ce2295",
-                "reference": "999c536a975a0f974020bbae5b15cf2cd6ce2295",
+                "url": "https://api.github.com/repos/Propaganistas/Laravel-Translatable-Bootforms/zipball/ebb14c8079cce0b77241f0e5d768c2a24fe81f9a",
+                "reference": "ebb14c8079cce0b77241f0e5d768c2a24fe81f9a",
                 "shasum": ""
             },
             "require": {
-                "adamwathan/bootforms": "^0.7.1",
+                "adamwathan/bootforms": "^0.8",
                 "dimsav/laravel-translatable": "~5.0",
                 "illuminate/support": "~5.0",
                 "php": ">=5.5.9"
@@ -1582,7 +1581,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-01-20 15:22:00"
+            "time": "2016-02-23 18:56:13"
         },
         {
             "name": "psr/http-message",
@@ -2825,16 +2824,16 @@
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.0.10",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5"
+                "reference": "8c4d672af22b8085c87ba6d333147bcd802661dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5",
-                "reference": "e7cd8470fe8ec4a65cf9ba052ce4a3015991b5d5",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/8c4d672af22b8085c87ba6d333147bcd802661dc",
+                "reference": "8c4d672af22b8085c87ba6d333147bcd802661dc",
                 "shasum": ""
             },
             "require": {
@@ -2861,7 +2860,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-02-18 08:01:56"
+            "time": "2016-02-29 07:43:50"
         },
         {
             "name": "webfactorybulgaria/dashboard",
@@ -2900,16 +2899,16 @@
         },
         {
             "name": "webfactorybulgaria/files",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Files.git",
-                "reference": "1068f572c6f3d130688ee7b9bcd1e894799da98c"
+                "reference": "8a0af88685c96339c66b134d2a8fd9dc40256216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/1068f572c6f3d130688ee7b9bcd1e894799da98c",
-                "reference": "1068f572c6f3d130688ee7b9bcd1e894799da98c",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/8a0af88685c96339c66b134d2a8fd9dc40256216",
+                "reference": "8a0af88685c96339c66b134d2a8fd9dc40256216",
                 "shasum": ""
             },
             "require": {
@@ -2931,7 +2930,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-02-10 09:54:08"
+            "time": "2016-02-29 07:47:59"
         },
         {
             "name": "webfactorybulgaria/galleries",
@@ -3002,7 +3001,6 @@
                 }
             ],
             "time": "2016-02-18 08:07:13"
-
         },
         {
             "name": "webfactorybulgaria/history",
@@ -3158,16 +3156,16 @@
         },
         {
             "name": "webfactorybulgaria/objects",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Objects.git",
-                "reference": "1070872a57bb77437ffdf7d9e99cb9f21cbc2eed"
+                "reference": "1a9c5426e94a82b222352c5116fb97f3d164b61f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/1070872a57bb77437ffdf7d9e99cb9f21cbc2eed",
-                "reference": "1070872a57bb77437ffdf7d9e99cb9f21cbc2eed",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/1a9c5426e94a82b222352c5116fb97f3d164b61f",
+                "reference": "1a9c5426e94a82b222352c5116fb97f3d164b61f",
                 "shasum": ""
             },
             "require": {
@@ -3184,7 +3182,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-02-10 10:06:08"
+            "time": "2016-02-18 08:09:05"
         },
         {
             "name": "webfactorybulgaria/pages",
@@ -3220,7 +3218,6 @@
                 }
             ],
             "time": "2016-02-10 10:21:22"
-
         },
         {
             "name": "webfactorybulgaria/settings",
