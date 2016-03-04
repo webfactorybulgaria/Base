@@ -1,0 +1,62 @@
+//
+// Floats
+//
+
+.clearfix {
+    @include clearfix();
+}
+
+//
+// Screenreaders
+//
+
+.sr-only,
+.skip-to-content {
+    @include sr-only();
+}
+
+.sr-only-focusable {
+    @include sr-only-focusable();
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.text-hide {
+    //@include text-hide();
+}
+
+
+//
+// Text
+//
+
+// Alignment
+
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify !important; }
+.text-nowrap         { white-space: nowrap !important; }
+
+// Transformation
+
+.text-lowercase      { text-transform: lowercase !important; }
+.text-uppercase      { text-transform: uppercase !important; }
+.text-capitalize     { text-transform: capitalize !important; }
+
+// Weight and italics
+
+.font-weight-normal  { font-weight: normal; }
+.font-weight-bold    { font-weight: bold; }
+.font-italic         { font-style: italic; }
+
+// Scalable images
+.img-responsive {
+    @include fluid-image;
+}
+
+// Top/bottom margin
+@for $i from 0 through 3 {
+    .mt#{$i*10} { margin-top: (0px + $i*10) !important; }
+    .mb#{$i*10} { margin-bottom: (0px + $i*10) !important; }
+}
