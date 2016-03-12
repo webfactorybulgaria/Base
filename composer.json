@@ -20,7 +20,7 @@
         "guzzlehttp/guzzle": "~6.0",
         "laracasts/presenter": "~0.2.1",
         "laracasts/utilities": "~2.1.0",
-        "bkwld/croppa": "~4.3.0",
+        "bkwld/croppa": "~4.4.0",
         "maatwebsite/laravel-sidebar": "~1.1.1",
         "propaganistas/laravel-translatable-bootforms": "~1.1",
         "webfactorybulgaria/nestablecollection": "~4.0.0",
@@ -53,7 +53,10 @@
         "psr-4": {
             "App\\": "app/",
             "TypiCMS\\Modules\\": "Modules/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [
