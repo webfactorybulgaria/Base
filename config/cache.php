@@ -74,6 +74,6 @@ return [
     |
     */
 
-    'prefix' => 'typicms',
+    'prefix' => 'admintool4',
 
 ];

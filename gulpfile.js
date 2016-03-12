@@ -105,6 +105,17 @@ gulp.task('fancybox-img', function () {
 
 });
 
+// Publish ElFinder images
+gulp.task('elfinder-img', function () {
+
+    var destDir = 'public/components/elfinder/source';
+
+    return gulp.src('node_modules/jquery-colorbox/example1/images/*')
+        .pipe(gulp.dest(destDir));
+
+});
+
+
 // Publish CKEditor
 gulp.task('ckeditor', function () {
 
@@ -171,6 +182,8 @@ gulp.task('js-admin', function () {
             'node_modules/dropzone/dist/dropzone.js',
             'node_modules/selectize/dist/js/standalone/selectize.js',
             'node_modules/fancybox/dist/js/jquery.fancybox.js',
+            'node_modules/jquery-colorbox/jquery.colorbox-min.js',
+            'public/packages/barryvdh/elfinder/js/standalonepopup.js',
             'resources/assets/js/admin/*',
             'resources/assets/typicms/**/*.js'
         ];
@@ -231,6 +244,7 @@ gulp.task('all', [
     'fonts',
     'angular-locales',
     'fancybox-img',
+    'elfinder-img',
     'ckeditor',
     'watch'
 ]);
