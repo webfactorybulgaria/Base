@@ -1,8 +1,9 @@
 var gulp       = require('gulp'),
     gutil      = require('gulp-util'),
     less       = require('gulp-less'),
+    sass       = require('gulp-sass'),
     concat     = require('gulp-concat'),
-    minifyCSS  = require('gulp-minify-css'),
+    cssnano    = require('gulp-cssnano'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
     livereload = require('gulp-livereload'),
@@ -18,20 +19,40 @@ function swallowError (error) {
     this.emit('end');
 }
 
-// Compile Less and save to css directory
-gulp.task('less-public', function () {
+// Compile Sass in development mode.
+gulp.task('sass-dev', function () {
 
-    return gulp.src('resources/assets/less/public/master.less')
-        .pipe(less())
+    return gulp.src('resources/assets/sass/master.scss')
+        .pipe(sass({
+            includePaths: ['node_modules'],
+            outputStyle: 'compact'
+        }))
         .on('error', swallowError)
-        .pipe(prefix('> 1%', 'ie >= 9'))
-        .pipe(minifyCSS())
         .pipe(rename('public.css'))
         .pipe(gulp.dest('public/css'))
-        .pipe(livereload());
 
 });
 
+// Compile Sass in production mode.
+// Same as development mode, except that it prefixes and minifies CSS, so it's slower.
+gulp.task('sass-prod', function () {
+
+    return gulp.src('resources/assets/sass/master.scss')
+        .pipe(sass({
+            includePaths: ['node_modules']
+        }))
+        .on('error', swallowError)
+        .pipe(prefix({
+            browsers: ['ie >= 11', 'Firefox ESR', 'Opera 12.1', 'last 2 versions'],
+            cascade: false
+        }))
+        .pipe(cssnano())
+        .pipe(rename('public.css'))
+        .pipe(gulp.dest('public/css'));
+
+});
+
+// Compile Less for backoffice and save to css directory
 gulp.task('less-admin', function () {
 
     return gulp.src('resources/assets/less/admin/master.less')
@@ -46,7 +67,7 @@ gulp.task('less-admin', function () {
 });
 
 // version
-gulp.task('version', function() {
+gulp.task('version', ['sass-prod', 'js-public'], function() {
 
     var publicDir = 'public',
         buildDir = publicDir + '/build',
@@ -213,19 +234,16 @@ gulp.task('js-public', function () {
 
 // Keep an eye on Less and JS files for changes…
 gulp.task('watch', function () {
-    livereload.listen();
-    gulp.watch('resources/assets/less/public/**/*.less', ['less-public']);
+    gulp.watch('resources/assets/sass/**/*.scss', ['sass-dev']);
     gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
-    gulp.watch('resources/assets/less/*.less', ['less-public', 'less-admin']);
     gulp.watch('resources/assets/js/public/**/*.js', ['js-public']);
     gulp.watch('resources/assets/js/admin/**/*.js', ['js-admin']);
     gulp.watch('resources/assets/typicms/**/*.js', ['js-admin']);
-    gulp.watch(['public/css/*.css', 'public/js/admin/*.js', 'public/js/public/*.js'], ['version']);
 });
 
 // What tasks does running gulp trigger?
 gulp.task('all', [
-    'less-public',
+    'sass-dev',
     'less-admin',
     'js-public',
     'js-admin',
@@ -236,8 +254,14 @@ gulp.task('all', [
     'watch'
 ]);
 
+gulp.task('prod', [
+    'sass-prod',
+    'js-public',
+    'version'
+]);
+
 gulp.task('default', [
-    'less-public',
+    'sass-dev',
     'js-public',
     'watch'
 ]);
