@@ -62,9 +62,12 @@ CKEDITOR.editorConfig = function( config ) {
     config.removeDialogTabs = 'image:Link;link:advanced;link:send';
 
     // File browser
-    config.filebrowserBrowseUrl = '/admin/files?view=filepicker';
+    config.filebrowserBrowseUrl = '/elfinder/ckeditor';
+
+    // File browser
+    /*config.filebrowserBrowseUrl = '/admin/files?view=filepicker';
     config.filebrowserImageBrowseUrl = '/admin/files?type=i&view=filepicker';
     config.filebrowserWindowWidth = 800;
-    config.filebrowserWindowHeight = 500;
+    config.filebrowserWindowHeight = 500;*/
 
 };

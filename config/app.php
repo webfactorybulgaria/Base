@@ -168,6 +168,7 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         Maatwebsite\Sidebar\SidebarServiceProvider::class,
         Propaganistas\LaravelTranslatableBootForms\TranslatableBootFormsServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
         TypiCMS\Modules\Translations\Providers\TranslationServiceProvider::class,
 
         /*

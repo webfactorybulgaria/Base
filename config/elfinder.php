@@ -76,6 +76,15 @@ return array(
     |
     */
 
-    'options' => array(),
+    'options' => array(
+        'roots' => array(
+            array(
+                'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
+                'path'          => realpath(__DIR__.'/../public/uploads'),         // path to files (REQUIRED)
+                'URL'           => '/uploads/', // URL to files (REQUIRED)
+                'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
+            )
+        )
+    ),
 
 );
