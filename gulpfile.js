@@ -27,8 +27,7 @@ gulp.task('less-public', function () {
         .pipe(prefix('> 1%', 'ie >= 9'))
         .pipe(minifyCSS())
         .pipe(rename('public.css'))
-        .pipe(gulp.dest('public/css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('public/css'));
 
 });
 
@@ -40,8 +39,7 @@ gulp.task('less-admin', function () {
         .pipe(prefix('last 2 versions', '> 1%', 'ie >= 9', 'Android 2'))
         .pipe(minifyCSS())
         .pipe(rename('admin.css'))
-        .pipe(gulp.dest('public/css'))
-        .pipe(livereload());
+        .pipe(gulp.dest('public/css'));
 
 });
 
@@ -225,7 +223,6 @@ gulp.task('js-public', function () {
 
 // Keep an eye on Less and JS files for changes…
 gulp.task('watch', function () {
-    livereload.listen();
     gulp.watch('resources/assets/less/public/**/*.less', ['less-public']);
     gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
     gulp.watch('resources/assets/less/*.less', ['less-public', 'less-admin']);
@@ -245,8 +242,7 @@ gulp.task('all', [
     'angular-locales',
     'fancybox-img',
     'elfinder-img',
-    'ckeditor',
-    'watch'
+    'ckeditor'
 ]);
 
 gulp.task('default', [
