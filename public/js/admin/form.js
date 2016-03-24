@@ -21,14 +21,16 @@
             }
 
             data['id'] = id;
-            data[field] = 'delete';
+            data[field] = '';
 
             $.ajax({
                 type: 'PUT',
                 url: url,
                 data: data
             }).done(function() {
-                $this.parent().remove();
+                var parent = $this.parent();
+                parent.next().find('.image-selector').val('');
+                parent.remove();
             }).fail(function () {
                 alertify.error('An error occurred while deleting attachment.');
             });
