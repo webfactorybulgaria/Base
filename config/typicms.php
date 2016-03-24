@@ -68,9 +68,10 @@ return [
     /*
     |--------------------------------------------------------------------------
     | Folder to find template files for pages.
+    | This folder is a subfolder of /resources/views/vendor/pages
     |--------------------------------------------------------------------------
     |
     */
-    'template_dir' => 'resources/views/vendor/pages/public',
+    'template_dir' => 'public',
 
 ];
