@@ -28,7 +28,7 @@ return [
      *      | string   IoC binding name of League\Flysystem\Filesystem
      *      | string   IoC binding name of League\Flysystem\Cached\CachedAdapter
      */
-    'crops_dir' => public_path().'/uploads',
+    'crops_dir' => public_path().'/uploads/.thumbs',
 
     /*
      * Maximum number of sizes to allow for a particular source file.  This is to
@@ -56,7 +56,7 @@ return [
      *
      * @var string
      */
-    'path' => 'uploads/(.*)$',
+    'path' => 'uploads/(?:\.thumbs/)?(.*)$',
 
     /*
      * A regex pattern that works like `path` except it is only used by the
@@ -75,6 +75,7 @@ return [
      */
     // 'url_prefix' =>  '//'.Request::getHttpHost().'/uploads/',        // Local
     // 'url_prefix' => 'https://your-bucket.s3.amazonaws.com/uploads/', // S3
+    'url_prefix' =>  '/uploads/.thumbs/',
 
     /*
      * Reject attempts to maliciously create images by signing the generated the
