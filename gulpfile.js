@@ -12,6 +12,7 @@ var gulp       = require('gulp'),
     del        = require('del'),
     rev        = require('gulp-rev'),
     vinylPaths = require('vinyl-paths');
+var fileMode = 436;
 
 function swallowError (error) {
     console.log(error.toString());
@@ -27,7 +28,7 @@ gulp.task('less-public', function () {
         .pipe(prefix('> 1%', 'ie >= 9'))
         .pipe(minifyCSS())
         .pipe(rename('public.css'))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('public/css', {mode: fileMode}));
 
 });
 
@@ -39,7 +40,7 @@ gulp.task('less-admin', function () {
         .pipe(prefix('last 2 versions', '> 1%', 'ie >= 9', 'Android 2'))
         .pipe(minifyCSS())
         .pipe(rename('admin.css'))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('public/css', {mode: fileMode}));
 
 });
 
@@ -57,12 +58,12 @@ gulp.task('version', function() {
             publicDir + '/js/admin/*',
             publicDir + '/js/public/*'
         ], { base: './' + publicDir })
-        .pipe(gulp.dest(buildDir))
+        .pipe(gulp.dest(buildDir, {mode: fileMode}))
         .pipe(files)
         .pipe(rev())
-        .pipe(gulp.dest(buildDir))
+        .pipe(gulp.dest(buildDir, {mode: fileMode}))
         .pipe(rev.manifest())
-        .pipe(gulp.dest(buildDir))
+        .pipe(gulp.dest(buildDir, {mode: fileMode}))
         .on('end', function() {
             del(files.paths);
         });
@@ -76,7 +77,7 @@ gulp.task('fonts', function () {
     return gulp.src([
             'node_modules/font-awesome/fonts/*'
         ])
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
@@ -89,7 +90,7 @@ gulp.task('angular-locales', function () {
             'node_modules/angular-i18n/angular-locale_fr-fr.js',
             'node_modules/angular-i18n/angular-locale_nl-nl.js'
         ])
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
@@ -99,7 +100,7 @@ gulp.task('fancybox-img', function () {
     var destDir = 'public/components/fancybox/source';
 
     return gulp.src('node_modules/fancybox/dist/img/*')
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
@@ -109,7 +110,7 @@ gulp.task('elfinder-img', function () {
     var destDir = 'public/components/elfinder/source';
 
     return gulp.src('node_modules/jquery-colorbox/example1/images/*')
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
@@ -123,7 +124,7 @@ gulp.task('ckeditor', function () {
         'node_modules/ckeditor/styles.js',
         'node_modules/ckeditor/contents.css'
     ])
-    .pipe(gulp.dest('public/components/ckeditor'));
+    .pipe(gulp.dest('public/components/ckeditor', {mode: fileMode}));
 
     // Lang files
     gulp.src([
@@ -134,7 +135,7 @@ gulp.task('ckeditor', function () {
             'node_modules/ckeditor/lang/en.js',
             'node_modules/ckeditor/lang/nl.js'
         ])
-        .pipe(gulp.dest('public/components/ckeditor/lang'));
+        .pipe(gulp.dest('public/components/ckeditor/lang', {mode: fileMode}));
 
     // Plugins
     var plugins = [
@@ -154,7 +155,7 @@ gulp.task('ckeditor', function () {
     ];
     for (var i = 0; i < plugins.length; i++) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugins[i] + '/**/*'])
-            .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugins[i]));
+            .pipe(gulp.dest('public/components/ckeditor/plugins/' + plugins[i], {mode: fileMode}));
     }
 
 });
@@ -192,7 +193,7 @@ gulp.task('js-admin', function () {
         .pipe(uglify())
         .on('error', swallowError)
         .pipe(rename(destFile))
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
@@ -217,7 +218,7 @@ gulp.task('js-public', function () {
         .pipe(uglify())
         .on('error', swallowError)
         .pipe(rename(destFile))
-        .pipe(gulp.dest(destDir));
+        .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
