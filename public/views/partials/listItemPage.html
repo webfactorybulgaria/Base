@@ -1,7 +1,7 @@
 <div class="disclose fa fa-fw" ng-class="{'fa-caret-right': collapsed, 'fa-caret-down': !collapsed, hidden: !model.items.length}" ng-click="toggle(this)"></div>
 <div typi-btn-delete action="deleteFromNested(this)"></div>
 <div>
-    <a class="btn btn-default btn-xs" href="pages/{{ model.id }}/edit" translate>Edit</a>
+    <a class="btn btn-default btn-xs btn-edit" href="pages/{{ model.id }}/edit" title="Edit"><span class="fa fa-pencil"></span></a>
 </div>
 <div typi-btn-status action="toggleStatus(model)" model="model"></div>
 <span ng-if="model.private" class="fa fa-lock"></span>

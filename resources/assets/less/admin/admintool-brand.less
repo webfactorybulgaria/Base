@@ -1,0 +1,104 @@
+//Admintool brand common styles
+
+//custom scrollbar
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.6);
+    background-clip: padding-box;
+    min-height: 28px;
+    padding: 100px 0 0;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 10px;
+    background: #f0f0f0;
+    transition: width 0.2s linear;
+}
+
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    border-width: 2px 1px;
+    min-height: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: all 0.1s linear;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #777;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+
+    .navbar-brand,
+    .navbar-nav>li>a,
+    .navbar-text {
+        color: #fff;
+    }
+}
+.nav {
+    >li>a:focus,
+    >li>a:hover {
+        color: #fff;
+        background-color: #FF7700;
+    }
+    &.nav-sidebar>li>a {
+        color: #e7e7e7;
+        text-shadow: none;
+
+        .icon {
+            //color: #e7e7e7;
+            font-size: 125%;
+        }
+    }
+
+    & .open>a,
+    & .open>a:focus,
+    & .open>a:hover {
+        background-color: #FF7700;
+    }
+
+    .dropdown-menu {
+        color: #000;
+    }
+    .user-actions {
+        margin: 23px 0 0;
+    }
+}
+
+.btn-secondary {
+  .button-variant(@btn-secondary-color; @btn-secondary-bg; @btn-secondary-border);
+}
+.btn-remove {
+    color: @brand-danger;
+}
+.btn-edit {
+    color: #428bca;
+}
+.sidebar-logo {
+    margin: 0 auto 15px;
+}
+.made-by-wf {
+    margin-top: 35px;
+    color: #fff;
+
+    span {
+        margin-right: 5px;
+    }
+}

@@ -2,6 +2,7 @@
 @import 'tabs';
 @import '../../../../node_modules/font-awesome/less/font-awesome';
 @import 'variables';
+@import 'mixins';
 @import '../navbar';
 @import '../login';
 @import '../alertify';
@@ -23,6 +24,9 @@
 
 @import 'sidebar';
 @import 'offcanvas';
+
+// admintool4 styles
+@import 'admintool-brand';
 
 html {
     height: 100%;
@@ -54,7 +58,7 @@ h1 {
 // Online offline switch
 .switch {
     font-size: 20px !important;
-    color: @brand-primary;
+    color: @brand-success;
 }
 .switch.fa-toggle-off {
     color: @gray-light;
