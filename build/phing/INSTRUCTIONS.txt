@@ -1,0 +1,4 @@
+- In env/default.properties set the project.application, project.name and project.repo values
+- Make sure you develop on a dev branch and your changes are committed
+- Run 'deploy uat [initial]' for deployment to UAT environment
+

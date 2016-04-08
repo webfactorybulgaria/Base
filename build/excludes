@@ -1,0 +1,12 @@
+admintool3/ajaxfilemanager/session/
+uploadify/ajaxfilemanager/session/
+admintool3/.htaccess
+admintool3/.htpasswd
+uploads/
+.git/
+401.shtml
+pdo.inc.php
+.htaccess
+error_log
+build/
+build.xml

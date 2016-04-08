@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="hello" basedir=".">
+
+    <!-- Import & Override environment configuration -->
+
+    <if>
+        <isset property="build.env" />
+        <then>
+            <!--<echo message="Overwriting default.properties with ${build.env}.properties" />-->
+            <property file="${project.basedir}/build/phing/env/${build.env}.properties" override="true" />
+        </then>
+        <else>
+            <echo message="Parameter 'build.env' not set. Using DEFAULT.properties configuration..." />
+        </else>
+    </if>
+    <property file="${project.basedir}/build/phing/env/default.properties" />
+
+    <!-- Import Phing macros -->
+    <import file="/data/web_docs/upload/build/macros.xml" />
+
+    <target name="hello">
+        <echo message="This script deploys the current branch to a chosen environment." />
+        <echo message="Usage: deploy &lt;environment (uat/production)&gt;" />
+    </target>
+    
+    <!-- ============================================  -->
+    <!-- Target: prepare                               -->
+    <!-- ============================================  -->
+    <target name="prepare" depends="git-has-remote,git-dirty" description="[ MAIN ] Stack changes for release">
+        <fail unless="build.source" message="Required parameter 'build.source' missing..." />
+        <if>
+            <equals arg1="${git.dirty}" arg2="*" trim="true" />
+            <then>
+                <fail msg="Working tree is dirty! Please commit/stash your changes."></fail>
+            </then>
+        </if>
+
+
+        <if>
+            <equals arg1="${git.has.remote}" arg2="*" trim="true" />
+            <then>
+                <trycatch>
+                    <try>
+                        <gitpull
+                            repository="${project.dir}"
+                            refspec="${build.source}"
+                            rebase="false" />
+                    </try>
+                    <catch>
+                        <phingcall target="git-reset">
+                            <property name="checkin.repo" value="${project.dir}" />
+                        </phingcall>
+                        <fail msg="It appears there were some conflicts during the last merge. Please resolve them before you continue. Execute 'git pull' &amp; resolve ..........." />
+                    </catch>
+                </trycatch>
+
+            </then>
+        </if>
+        <trycatch>
+            <try>
+                <gitpush
+                    repository="${project.dir}"
+                    refspec="${build.source}"
+                />
+            </try>
+            <catch>
+                <fail msg="Unable to push your changes" />
+            </catch>
+        </trycatch>
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: deploy                                -->
+    <!-- ============================================  -->
+    <target name="deploy" depends="prepare" description="[ MAIN ] Deploy release branch on build environment">
+        <fail unless="build.source" message="Required parameter 'build.source' missing..." />
+        <!-- Perform versioning feature release -->
+        <trycatch>
+            <try>
+                <phingcall target="git-merge">
+                    <property name="merge.repo" value="${project.dir}" />
+                    <property name="merge.source" value="${build.source}" />
+                    <property name="merge.target" value="${build.branch}" />
+                </phingcall>
+            </try>
+            <catch>
+                <fail msg="Unable to merge your changes into the desired branch (${build.branch}). Merge ${build.branch} into ${build.source} to ensure fast forward" />
+            </catch>
+        </trycatch>
+
+        <if>
+            <equals arg1="${upload.method}" arg2="ftp" trim="true" />
+            <then>
+                <phingcall target="deploy-ftp-application">
+                </phingcall>
+            </then>
+            <else>
+                <!-- rSync project's build dir to the remote's build path -->
+                <filesync
+                    sourcedir="${project.dir}"
+                    destinationdir="${upload.username}@${upload.host}:${upload.dir}"
+                    dryrun="true"
+                    options="-vurlDIzc"
+                    itemizechanges="false"
+                    verbose="false"
+                    excludeFile="../excludes"
+                    checksum="false" />
+
+                <!-- chmod dynamic files & folders -->
+                <phingcall target="ssh-exec">
+                    <property name="ssh.exec" value="${bin.chmod} 777 ${upload.dir}/uploads ${upload.dir}/js/j.js ${upload.dir}/css/c.css" />
+                </phingcall>
+            </else>
+        </if>
+
+        <if>
+            <equals arg1="${upload.initial}" arg2="initial" trim="true" />
+            <then>
+                <if>
+                    <equals arg1="${project.application}" arg2="admintool4" trim="true" />
+                    <then>
+                        <echo message="
+Make sure you:
+1. Edit the .env file 
+2. Put a .htaccess (Deny From All) in the framework folder.
+3. Change the path to the framework in index.php:
+require __DIR__.'/framework/bootstrap/autoload.php';
+$app = require_once __DIR__.'/framework/bootstrap/app.php';
+$app->bind('path.public', function() { return __DIR__; });
+
+
+                            " />
+                    </then>
+                </if>
+            </then>
+        </if>
+
+    </target>
+
+</project>
