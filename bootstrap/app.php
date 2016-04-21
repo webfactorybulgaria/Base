@@ -43,6 +43,20 @@ $app->singleton(
 
 /*
 |--------------------------------------------------------------------------
+| Bind the Public Path
+|--------------------------------------------------------------------------
+|
+| On shared hostings we want to change the public path. As this
+| is somewhat hardcoded in the $app->publicPath method we give
+| the option to set an env constant to change this if necessary
+|
+*/
+$app->bind('path.public', function(Illuminate\Foundation\Application $app) {
+    return env('PUBLIC_PATH') ?: $app->publicPath();
+});
+
+/*
+|--------------------------------------------------------------------------
 | Return The Application
 |--------------------------------------------------------------------------
 |
