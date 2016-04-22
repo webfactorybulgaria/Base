@@ -82,4 +82,13 @@ return [
     */
     'version_count' => 10,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Public Path setting
+    |--------------------------------------------------------------------------
+    |
+    | Here you can override the public path but it is advisable to do it in the .env
+    |
+    */
+    'public_path' => env('PUBLIC_PATH'),
 ];

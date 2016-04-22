@@ -52,7 +52,8 @@ $app->singleton(
 |
 */
 $app->bind('path.public', function(Illuminate\Foundation\Application $app) {
-    return env('PUBLIC_PATH') ?: $app->publicPath();
+    // don't ask - in some cases the config is not yet fully loaded at this point
+    return $app->config->get('typicms.public_path') ?: env('PUBLIC_PATH') ?: $app->publicPath();
 });
 
 /*
