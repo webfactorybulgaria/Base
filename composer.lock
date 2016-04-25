@@ -2895,16 +2895,16 @@
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.0.21",
+            "version": "v4.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "6ce31e95a7564d28c14debe44d88a9766bb302bd"
+                "reference": "53fd8084e93c3c29cc3aa05068213647973b2843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/6ce31e95a7564d28c14debe44d88a9766bb302bd",
-                "reference": "6ce31e95a7564d28c14debe44d88a9766bb302bd",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/53fd8084e93c3c29cc3aa05068213647973b2843",
+                "reference": "53fd8084e93c3c29cc3aa05068213647973b2843",
                 "shasum": ""
             },
             "require": {
@@ -2931,7 +2931,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-21 07:50:27"
+            "time": "2016-04-25 08:02:36"
         },
         {
             "name": "webfactorybulgaria/dashboard",
@@ -3256,16 +3256,16 @@
         },
         {
             "name": "webfactorybulgaria/settings",
-            "version": "v4.0.8",
+            "version": "v4.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Settings.git",
-                "reference": "98cbc760bf16180caaf3930068ee6bc1959d712c"
+                "reference": "7053288a53eee5382f27ccd6c2b60c5c96cd98a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/98cbc760bf16180caaf3930068ee6bc1959d712c",
-                "reference": "98cbc760bf16180caaf3930068ee6bc1959d712c",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/7053288a53eee5382f27ccd6c2b60c5c96cd98a1",
+                "reference": "7053288a53eee5382f27ccd6c2b60c5c96cd98a1",
                 "shasum": ""
             },
             "require": {
@@ -3287,7 +3287,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-19 07:44:17"
+            "time": "2016-04-21 07:51:28"
         },
         {
             "name": "webfactorybulgaria/sitemap",
