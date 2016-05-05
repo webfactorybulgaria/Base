@@ -24,10 +24,23 @@ return [
     |--------------------------------------------------------------------------
     |
     | If set to false, the fallback_locale defined in config/app.php
-    | will not appears in URLs.
+    | will not appear in URLs.
     |
     */
     'main_locale_in_url' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | You can choose to have all pages URLs starting at root level 
+    | (default = false)
+    |--------------------------------------------------------------------------
+    |
+    | If set to false, the URLs will be nested 
+    | Note that the URLs are generated and stored in the database. If you 
+    | change this setting make sure you update the database
+    |
+    */
+    'single_level_urls' => false,
 
     /*
     |--------------------------------------------------------------------------
