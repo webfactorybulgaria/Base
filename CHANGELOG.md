@@ -1,10 +1,16 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
-## 2.7.25 - 2016-03-29
+## 2.8.0 - 2016-04-13
 
-### Added
-- thumb2x() method added to core presenter.
+### Changed
+- Groups is replaced by roles
+- Permissions are now stored in database, see [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+- Preview button in form is only present when the module is linked to a page.
+- Routes name in admin have changed from **admin.{module}.{action}** to admin::{action}-{module(s)}
+- index, edit and create methods where removed from BaseAdminController.
+
+## 2.7.25 - 2016-03-29
 
 ### Changed
 - Class img-responsive removed from core presenter method thumb().
