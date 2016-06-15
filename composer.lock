@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "235fe4e03779f21da186a92495c18e1a",
-    "content-hash": "6092325e8962c8f6344fb2a17e5c45d8",
+    "hash": "52201c562f557e66403f8f23a0fa96e7",
+    "content-hash": "4b9fdd13a341dfe95071bd37d640942d",
     "packages": [
         {
             "name": "adamwathan/bootforms",
-            "version": "v0.8.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/bootforms.git",
-                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba"
+                "reference": "c9e02ea46e4599fe718308ee917bbf2422d04afd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
-                "reference": "20ce41da79e3e35488d559f7ef5ab3dba6ef92ba",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/c9e02ea46e4599fe718308ee917bbf2422d04afd",
+                "reference": "c9e02ea46e4599fe718308ee917bbf2422d04afd",
                 "shasum": ""
             },
             "require": {
@@ -47,20 +47,20 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2016-02-11 20:17:34"
+            "time": "2016-06-09 17:00:51"
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.9",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7"
+                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/8056cea6743de85e079d69bc43ee8e358553a9a7",
-                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/b95e6724e55897d7947a8a06e18abac24e88198d",
+                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d",
                 "shasum": ""
             },
             "require": {
@@ -89,20 +89,20 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-05-10 01:07:01"
+            "time": "2016-03-24 23:00:52"
         },
         {
             "name": "barryvdh/elfinder-flysystem-driver",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/elfinder-flysystem-driver.git",
-                "reference": "ee522ab9352ee0a473f7b261b28d805d8d3f4301"
+                "reference": "603afb0fa4b4d42a8c998759a02f69e9dc5ce6cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/elfinder-flysystem-driver/zipball/ee522ab9352ee0a473f7b261b28d805d8d3f4301",
-                "reference": "ee522ab9352ee0a473f7b261b28d805d8d3f4301",
+                "url": "https://api.github.com/repos/barryvdh/elfinder-flysystem-driver/zipball/603afb0fa4b4d42a8c998759a02f69e9dc5ce6cb",
+                "reference": "603afb0fa4b4d42a8c998759a02f69e9dc5ce6cb",
                 "shasum": ""
             },
             "require": {
@@ -144,7 +144,7 @@
                 "elfinder",
                 "filesystem"
             ],
-            "time": "2016-02-19 15:35:32"
+            "time": "2016-04-04 14:10:16"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -202,23 +202,25 @@
         },
         {
             "name": "barryvdh/laravel-elfinder",
-            "version": "v0.3.6",
+            "version": "v0.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-elfinder.git",
-                "reference": "90a32a00690adb64421d9f39342a737798f4f5ad"
+                "reference": "e8e307a950c73d01b90f0120ef5bf20228669dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-elfinder/zipball/90a32a00690adb64421d9f39342a737798f4f5ad",
-                "reference": "90a32a00690adb64421d9f39342a737798f4f5ad",
+                "url": "https://api.github.com/repos/barryvdh/laravel-elfinder/zipball/e8e307a950c73d01b90f0120ef5bf20228669dbc",
+                "reference": "e8e307a950c73d01b90f0120ef5bf20228669dbc",
                 "shasum": ""
             },
             "require": {
-                "barryvdh/elfinder-flysystem-driver": "0.1.x@dev",
+                "barryvdh/elfinder-flysystem-driver": "^0.1.4",
                 "illuminate/support": "5.0.x|5.1.x|5.2.x",
+                "league/flysystem": "^1.0",
+                "league/flysystem-cached-adapter": "^1.0",
                 "php": ">=5.4.0",
-                "studio-42/elfinder": "2.1.x"
+                "studio-42/elfinder": "~2.1.10"
             },
             "type": "library",
             "extra": {
@@ -248,7 +250,7 @@
                 "laravel",
                 "tinymce"
             ],
-            "time": "2016-03-17 08:53:11"
+            "time": "2016-04-04 13:50:01"
         },
         {
             "name": "bkwld/croppa",
@@ -725,16 +727,16 @@
         },
         {
             "name": "intervention/image",
-            "version": "2.3.6",
+            "version": "2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
-                "reference": "e368d262887dbb2fdfaf710880571ede51e9c0e6"
+                "reference": "22088b04728a039bd1fc32f7e79a89a118b78698"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/e368d262887dbb2fdfaf710880571ede51e9c0e6",
-                "reference": "e368d262887dbb2fdfaf710880571ede51e9c0e6",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/22088b04728a039bd1fc32f7e79a89a118b78698",
+                "reference": "22088b04728a039bd1fc32f7e79a89a118b78698",
                 "shasum": ""
             },
             "require": {
@@ -783,7 +785,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2016-02-26 18:18:19"
+            "time": "2016-04-26 14:08:40"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1022,16 +1024,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.36",
+            "version": "v5.2.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "236d7c0c5b67a2348ac7831391031d93000de3ab"
+                "reference": "e211a37eab49a124996ad9150f9e1bdfb52aa048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/236d7c0c5b67a2348ac7831391031d93000de3ab",
-                "reference": "236d7c0c5b67a2348ac7831391031d93000de3ab",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e211a37eab49a124996ad9150f9e1bdfb52aa048",
+                "reference": "e211a37eab49a124996ad9150f9e1bdfb52aa048",
                 "shasum": ""
             },
             "require": {
@@ -1147,7 +1149,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-06-06 15:18:48"
+            "time": "2016-06-14 01:20:40"
         },
         {
             "name": "league/flysystem",
@@ -1231,6 +1233,54 @@
                 "storage"
             ],
             "time": "2016-06-03 19:11:39"
+        },
+        {
+            "name": "league/flysystem-cached-adapter",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-cached-adapter.git",
+                "reference": "f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-cached-adapter/zipball/f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c",
+                "reference": "f006cb3c355ae596c72ba8ca4cf3aa4bb545bc0c",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "~1.0",
+                "psr/cache": "1.0.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0@dev",
+                "mockery/mockery": "~0.9",
+                "phpspec/phpspec": "~2.1",
+                "phpunit/phpunit": "~4.1",
+                "predis/predis": "~1.0",
+                "tedivm/stash": "~0.12"
+            },
+            "suggest": {
+                "ext-phpredis": "Pure C implemented extension for PHP"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\Cached\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "frankdejonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "An adapter decorator to enable meta-data caching.",
+            "time": "2016-01-25 08:21:11"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -1660,6 +1710,52 @@
             "time": "2016-04-26 13:41:51"
         },
         {
+            "name": "psr/cache",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "9e66031f41fbbdda45ee11e93c45d480ccba3eb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/9e66031f41fbbdda45ee11e93c45d480ccba3eb3",
+                "reference": "9e66031f41fbbdda45ee11e93c45d480ccba3eb3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2015-12-11 02:52:07"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.0",
             "source": {
@@ -1918,65 +2014,6 @@
             "time": "2015-12-17 17:30:38"
         },
         {
-            "name": "studio-42/elfinder",
-            "version": "2.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "49742815ca1ec55fbac9463d7ece2d9e4544a194"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/49742815ca1ec55fbac9463d7ece2d9e4544a194",
-                "reference": "49742815ca1ec55fbac9463d7ece2d9e4544a194",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "suggest": {
-                "barryvdh/elfinder-flysystem-driver": "VolumeDriver for elFinder to use Flysystem as a root.",
-                "dropbox-php/dropbox-php": "elFinder Volume driver `Dropbox` require `dropbox-php/dropbox-php`.",
-                "pear/auth": "dropbox-php require `pear/auth` or `PHP OAuth extension`.",
-                "pear/http_request2": "dropbox-php require `pear/http_request2` or `PHP OAuth extension`.",
-                "pear/net_url2": "dropbox-php require `pear/net_url2` or `PHP OAuth extension`."
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitry Levashov",
-                    "email": "dio@std42.ru",
-                    "homepage": "http://std42.ru"
-                },
-                {
-                    "name": "Troex Nevelin",
-                    "email": "troex@fury.scancode.ru",
-                    "homepage": "http://std42.ru"
-                },
-                {
-                    "name": "Naoki Sawada",
-                    "email": "hypweb@gmail.com",
-                    "homepage": "http://xoops.hypweb.net"
-                },
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
-                }
-            ],
-            "description": "File manager for web",
-            "homepage": "http://elfinder.org",
-            "time": "2016-03-11 06:51:01"
-        },
-        {
             "name": "spatie/laravel-permission",
             "version": "1.3.4",
             "source": {
@@ -2028,6 +2065,64 @@
                 "spatie"
             ],
             "time": "2016-02-27 13:07:08"
+        },
+        {
+            "name": "studio-42/elfinder",
+            "version": "2.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Studio-42/elFinder.git",
+                "reference": "249ef036eaacd1a5d31a6b1516e1c183afd5ff8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/249ef036eaacd1a5d31a6b1516e1c183afd5ff8e",
+                "reference": "249ef036eaacd1a5d31a6b1516e1c183afd5ff8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "suggest": {
+                "barryvdh/elfinder-flysystem-driver": "VolumeDriver for elFinder to use Flysystem as a root.",
+                "dropbox-php/dropbox-php": "elFinder Volume driver `Dropbox` require `dropbox-php/dropbox-php`.",
+                "nao-pon/flysystem-google-drive": "require in GoogleDrive network volume mounting.",
+                "pear/http_oauth": "dropbox-php require `pear/http_oauth` or `PHP OAuth extension`."
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Levashov",
+                    "email": "dio@std42.ru",
+                    "homepage": "http://std42.ru"
+                },
+                {
+                    "name": "Troex Nevelin",
+                    "email": "troex@fury.scancode.ru",
+                    "homepage": "http://std42.ru"
+                },
+                {
+                    "name": "Naoki Sawada",
+                    "email": "hypweb@gmail.com",
+                    "homepage": "http://xoops.hypweb.net"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
+                }
+            ],
+            "description": "File manager for web",
+            "homepage": "http://elfinder.org",
+            "time": "2016-05-30 13:46:36"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2201,16 +2296,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "0343b2cedd0edb26cdc791212a8eb645c406018b"
+                "reference": "f5b7563f67779c6d3d5370e23448e707c858df3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0343b2cedd0edb26cdc791212a8eb645c406018b",
-                "reference": "0343b2cedd0edb26cdc791212a8eb645c406018b",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/f5b7563f67779c6d3d5370e23448e707c858df3e",
+                "reference": "f5b7563f67779c6d3d5370e23448e707c858df3e",
                 "shasum": ""
             },
             "require": {
@@ -2257,7 +2352,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-12 18:27:47"
+            "time": "2016-06-06 11:42:41"
         },
         {
             "name": "symfony/finder",
@@ -2859,32 +2954,32 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-03-10 10:34:12"
+            "time": "2016-05-24 10:03:10"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.0"
+                "phpunit/phpunit": "^4.8 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -2894,7 +2989,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause-Attribution"
             ],
             "authors": [
                 {
@@ -2904,30 +2999,29 @@
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "homepage": "http://github.com/vlucas/phpdotenv",
             "keywords": [
                 "dotenv",
                 "env",
                 "environment"
             ],
-            "time": "2015-12-29 15:10:30"
+            "time": "2016-06-14 14:14:52"
         },
         {
             "name": "webfactorybulgaria/blocks",
-            "version": "v4.0.6",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Blocks.git",
-                "reference": "521c6b9b24bcaba03ed5e124726a17d9b614a587"
+                "reference": "0f5a81b67f9e7b98eb94a53319e87217a9bedf25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/521c6b9b24bcaba03ed5e124726a17d9b614a587",
-                "reference": "521c6b9b24bcaba03ed5e124726a17d9b614a587",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/0f5a81b67f9e7b98eb94a53319e87217a9bedf25",
+                "reference": "0f5a81b67f9e7b98eb94a53319e87217a9bedf25",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -2945,25 +3039,25 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-03-23 07:34:48"
+            "time": "2016-06-15 09:28:06"
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.0.26",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "4ab8e76030cc948b292964d4c23b38417f56f585"
+                "reference": "12a9dc38c49e27ca1fa5e3a0effe24621058d1c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/4ab8e76030cc948b292964d4c23b38417f56f585",
-                "reference": "4ab8e76030cc948b292964d4c23b38417f56f585",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/12a9dc38c49e27ca1fa5e3a0effe24621058d1c9",
+                "reference": "12a9dc38c49e27ca1fa5e3a0effe24621058d1c9",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "~5.2.0",
-                "webfactorybulgaria/objects": "~4.0.0"
+                "webfactorybulgaria/objects": "dev-dev@dev"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.1",
@@ -2985,24 +3079,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-05-18 09:04:13"
+            "time": "2016-06-15 09:28:25"
         },
         {
             "name": "webfactorybulgaria/dashboard",
-            "version": "v4.0.4",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Dashboard.git",
-                "reference": "161ecdaf76625d5ac22d035809f68d1e9f49e4a5"
+                "reference": "ed2efcfa404051d37badafd7f376d8e114cf3436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/161ecdaf76625d5ac22d035809f68d1e9f49e4a5",
-                "reference": "161ecdaf76625d5ac22d035809f68d1e9f49e4a5",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/ed2efcfa404051d37badafd7f376d8e114cf3436",
+                "reference": "ed2efcfa404051d37badafd7f376d8e114cf3436",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3020,24 +3114,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-03-23 07:42:13"
+            "time": "2016-06-15 09:28:33"
         },
         {
             "name": "webfactorybulgaria/files",
-            "version": "v4.0.6",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Files.git",
-                "reference": "010fc0d9b34873b5366bf5ba3b6341a1ff809a93"
+                "reference": "b17e08858342691bf3bc330f167c06ffc31e2f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/010fc0d9b34873b5366bf5ba3b6341a1ff809a93",
-                "reference": "010fc0d9b34873b5366bf5ba3b6341a1ff809a93",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/b17e08858342691bf3bc330f167c06ffc31e2f29",
+                "reference": "b17e08858342691bf3bc330f167c06ffc31e2f29",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3055,24 +3149,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-07 09:53:40"
+            "time": "2016-06-15 09:28:48"
         },
         {
             "name": "webfactorybulgaria/galleries",
-            "version": "v4.0.7",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Galleries.git",
-                "reference": "89bd13f2acc7c7d126217da16da2548ead8b781d"
+                "reference": "7dbfb31f44ed763bde5849419b40b3e87cadfd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/89bd13f2acc7c7d126217da16da2548ead8b781d",
-                "reference": "89bd13f2acc7c7d126217da16da2548ead8b781d",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/7dbfb31f44ed763bde5849419b40b3e87cadfd44",
+                "reference": "7dbfb31f44ed763bde5849419b40b3e87cadfd44",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3090,24 +3184,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-05-12 09:03:25"
+            "time": "2016-06-15 09:28:57"
         },
         {
             "name": "webfactorybulgaria/history",
-            "version": "v4.0.7",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/History.git",
-                "reference": "4b9d081bfa6c6ce8b64b3d3c54f215b6baedbe70"
+                "reference": "272310f0dc1688c134cc0fad846b9bef0a9406c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/4b9d081bfa6c6ce8b64b3d3c54f215b6baedbe70",
-                "reference": "4b9d081bfa6c6ce8b64b3d3c54f215b6baedbe70",
+                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/272310f0dc1688c134cc0fad846b9bef0a9406c3",
+                "reference": "272310f0dc1688c134cc0fad846b9bef0a9406c3",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3125,24 +3219,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-18 08:21:02"
+            "time": "2016-06-15 09:29:04"
         },
         {
             "name": "webfactorybulgaria/menus",
-            "version": "v4.0.7",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Menus.git",
-                "reference": "6311b03c30251a822b64f870fd449462b469cdca"
+                "reference": "8e6ff7705b124717d5b10756f41814695a5f1cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/6311b03c30251a822b64f870fd449462b469cdca",
-                "reference": "6311b03c30251a822b64f870fd449462b469cdca",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/8e6ff7705b124717d5b10756f41814695a5f1cbe",
+                "reference": "8e6ff7705b124717d5b10756f41814695a5f1cbe",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev"
             },
             "type": "library",
             "autoload": {
@@ -3160,20 +3254,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-05-18 09:05:21"
+            "time": "2016-06-15 08:56:27"
         },
         {
             "name": "webfactorybulgaria/nestablecollection",
-            "version": "v4.0.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/NestableCollection.git",
-                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e"
+                "reference": "e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/NestableCollection/zipball/2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
-                "reference": "2f3f17792f8e3521b3e1b6ee17ab3df8aec7d51e",
+                "url": "https://api.github.com/repos/webfactorybulgaria/NestableCollection/zipball/e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff",
+                "reference": "e75ed5efaf7cf8d98a44fd31e0435352a3bae0ff",
                 "shasum": ""
             },
             "require": {
@@ -3206,20 +3300,20 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2015-12-11 12:47:24"
+            "time": "2015-05-13 20:26:35"
         },
         {
             "name": "webfactorybulgaria/objects",
-            "version": "v4.0.4",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
-                "url": "git@github.com:webfactorybulgaria/Objects.git",
-                "reference": "e6e3e4cb24de91a5486cfe5198b770460558f11d"
+                "url": "https://github.com/webfactorybulgaria/Objects.git",
+                "reference": "9130248993628d900a108d08878bdaf36f5a13c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/e6e3e4cb24de91a5486cfe5198b770460558f11d",
-                "reference": "e6e3e4cb24de91a5486cfe5198b770460558f11d",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/9130248993628d900a108d08878bdaf36f5a13c9",
+                "reference": "9130248993628d900a108d08878bdaf36f5a13c9",
                 "shasum": ""
             },
             "require": {
@@ -3236,24 +3330,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-01 06:41:43"
+            "time": "2016-06-15 07:36:20"
         },
         {
             "name": "webfactorybulgaria/pages",
-            "version": "v4.0.16",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "f0a83839e1043ea914eabf0cc2d80d8c8b178234"
+                "reference": "a24990e69eb50c38032560c48912959ae025f083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/f0a83839e1043ea914eabf0cc2d80d8c8b178234",
-                "reference": "f0a83839e1043ea914eabf0cc2d80d8c8b178234",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/a24990e69eb50c38032560c48912959ae025f083",
+                "reference": "a24990e69eb50c38032560c48912959ae025f083",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3271,42 +3365,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-05-18 08:32:19"
+            "time": "2016-06-15 09:29:52"
         },
         {
-            "name": "webfactorybulgaria/settings",
-            "version": "v4.0.9",
+            "name": "webfactorybulgaria/roles",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Settings.git",
-                "reference": "7053288a53eee5382f27ccd6c2b60c5c96cd98a1"
+                "url": "https://github.com/webfactorybulgaria/Roles.git",
+                "reference": "b814fc880252135372c99b489c83f222a31e2359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/7053288a53eee5382f27ccd6c2b60c5c96cd98a1",
-                "reference": "7053288a53eee5382f27ccd6c2b60c5c96cd98a1",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Roles/zipball/b814fc880252135372c99b489c83f222a31e2359",
+                "reference": "b814fc880252135372c99b489c83f222a31e2359",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
-            "time": "2016-06-08 13:57:32"
-        },
-        {
-            "name": "typicms/roles",
-            "version": "2.8.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TypiCMS/Roles.git",
-                "reference": "b895604a0c26776169cc8ecef87923c0cf14455d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TypiCMS/Roles/zipball/b895604a0c26776169cc8ecef87923c0cf14455d",
-                "reference": "b895604a0c26776169cc8ecef87923c0cf14455d",
-                "shasum": ""
-            },
-            "require": {
-                "typicms/core": "~2.8.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3324,25 +3400,60 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-13 19:54:58"
+            "time": "2016-06-15 09:30:25"
         },
         {
-            "name": "webfactorybulgaria/sitemap",
-            "version": "v4.0.3",
+            "name": "webfactorybulgaria/settings",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webfactorybulgaria/Sitemap.git",
-                "reference": "241d2a1b63e013415d74df761842664afa330ec5"
+                "url": "https://github.com/webfactorybulgaria/Settings.git",
+                "reference": "f4d9c7304e6191fd8e42aed9c640b0f7b1d758e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/241d2a1b63e013415d74df761842664afa330ec5",
-                "reference": "241d2a1b63e013415d74df761842664afa330ec5",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/f4d9c7304e6191fd8e42aed9c640b0f7b1d758e4",
+                "reference": "f4d9c7304e6191fd8e42aed9c640b0f7b1d758e4",
+                "shasum": ""
+            },
+            "require": {
+                "webfactorybulgaria/core": "dev-dev@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TypiCMS\\Modules\\Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel De Backer",
+                    "email": "sdebacker@gmail.com"
+                }
+            ],
+            "time": "2016-06-15 09:31:50"
+        },
+        {
+            "name": "webfactorybulgaria/sitemap",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webfactorybulgaria/Sitemap.git",
+                "reference": "f8949cf07e0c97655aa11c30f57bbd2b378119ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/f8949cf07e0c97655aa11c30f57bbd2b378119ad",
+                "reference": "f8949cf07e0c97655aa11c30f57bbd2b378119ad",
                 "shasum": ""
             },
             "require": {
                 "roumen/sitemap": "~2.5.8",
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3360,24 +3471,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-02-11 09:00:25"
+            "time": "2016-06-15 09:31:57"
         },
         {
             "name": "webfactorybulgaria/translations",
-            "version": "v4.0.6",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Translations.git",
-                "reference": "1b7245ebfe817f37a2693b3b34054fcde78925c8"
+                "reference": "fe87f7541d61a00f847a930565126c1a9db2a15b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/1b7245ebfe817f37a2693b3b34054fcde78925c8",
-                "reference": "1b7245ebfe817f37a2693b3b34054fcde78925c8",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/fe87f7541d61a00f847a930565126c1a9db2a15b",
+                "reference": "fe87f7541d61a00f847a930565126c1a9db2a15b",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3395,24 +3506,24 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-06 10:15:10"
+            "time": "2016-06-15 09:32:19"
         },
         {
             "name": "webfactorybulgaria/users",
-            "version": "v4.0.5",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Users.git",
-                "reference": "1710f2f1af4e060651f48bb4bac4cfcdc5867293"
+                "reference": "891b698f52b4adc6d5ceee0ce2c833b0fd623000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/1710f2f1af4e060651f48bb4bac4cfcdc5867293",
-                "reference": "1710f2f1af4e060651f48bb4bac4cfcdc5867293",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/891b698f52b4adc6d5ceee0ce2c833b0fd623000",
+                "reference": "891b698f52b4adc6d5ceee0ce2c833b0fd623000",
                 "shasum": ""
             },
             "require": {
-                "webfactorybulgaria/core": "~4.0.0"
+                "webfactorybulgaria/core": "dev-dev@dev"
             },
             "type": "library",
             "autoload": {
@@ -3430,7 +3541,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-04-13 19:54:45"
+            "time": "2016-06-15 09:32:24"
         },
         {
             "name": "weotch/phpthumb",
@@ -3781,22 +3892,22 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "45ada3e3fd09789fbfbd6d65b3f0901f0030dc61"
+                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/45ada3e3fd09789fbfbd6d65b3f0901f0030dc61",
-                "reference": "45ada3e3fd09789fbfbd6d65b3f0901f0030dc61",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/9270140b940ff02e58ec577c237274e92cd40cdd",
+                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
-                "phpdocumentor/type-resolver": "^0.1.5",
+                "phpdocumentor/type-resolver": "^0.2.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -3822,20 +3933,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-06-06 06:44:13"
+            "time": "2016-06-10 09:48:41"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.1.8",
+            "version": "0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9891754231e55d42f0d16988ffb799af39f31a12"
+                "reference": "b39c7a5b194f9ed7bd0dd345c751007a41862443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9891754231e55d42f0d16988ffb799af39f31a12",
-                "reference": "9891754231e55d42f0d16988ffb799af39f31a12",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/b39c7a5b194f9ed7bd0dd345c751007a41862443",
+                "reference": "b39c7a5b194f9ed7bd0dd345c751007a41862443",
                 "shasum": ""
             },
             "require": {
@@ -3844,7 +3955,7 @@
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2"
+                "phpunit/phpunit": "^5.2||^4.8.24"
             },
             "type": "library",
             "extra": {
@@ -3869,7 +3980,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-03-28 10:02:29"
+            "time": "2016-06-10 07:14:17"
         },
         {
             "name": "phpspec/prophecy",
@@ -4786,16 +4897,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a"
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
                 "shasum": ""
             },
             "require": {
@@ -4831,7 +4942,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-26 21:46:24"
+            "time": "2016-06-14 11:18:07"
         },
         {
             "name": "webmozart/assert",
@@ -4885,7 +4996,22 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "webfactorybulgaria/objects": 20,
+        "webfactorybulgaria/core": 20,
+        "webfactorybulgaria/blocks": 20,
+        "webfactorybulgaria/dashboard": 20,
+        "webfactorybulgaria/files": 20,
+        "webfactorybulgaria/galleries": 20,
+        "webfactorybulgaria/roles": 20,
+        "webfactorybulgaria/history": 20,
+        "webfactorybulgaria/menus": 20,
+        "webfactorybulgaria/pages": 20,
+        "webfactorybulgaria/settings": 20,
+        "webfactorybulgaria/sitemap": 20,
+        "webfactorybulgaria/translations": 20,
+        "webfactorybulgaria/users": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
