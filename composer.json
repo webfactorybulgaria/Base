@@ -25,20 +25,20 @@
         "barryvdh/laravel-elfinder": "^0.3.6",
         "propaganistas/laravel-translatable-bootforms": "~1.3.1",
         "adamwathan/form": "0.8.4",
-        "webfactorybulgaria/nestablecollection": "~4.0.0",
-        "webfactorybulgaria/core": "~4.0.0",
-        "webfactorybulgaria/blocks": "~4.0.0",
-        "webfactorybulgaria/dashboard": "~4.0.0",
-        "webfactorybulgaria/files": "~4.0.0",
-        "webfactorybulgaria/galleries": "~4.0.0",
-        "webfactorybulgaria/groups": "~4.0.0",
-        "webfactorybulgaria/history": "~4.0.0",
-        "webfactorybulgaria/menus": "~4.0.0",
-        "webfactorybulgaria/pages": "~4.0.0",
-        "webfactorybulgaria/settings": "~4.0.0",
-        "webfactorybulgaria/sitemap": "~4.0.0",
-        "webfactorybulgaria/translations": "~4.0.0",
-        "webfactorybulgaria/users": "~4.0.0"
+        "webfactorybulgaria/nestablecollection": "dev-master",
+        "webfactorybulgaria/core": "dev-master",
+        "webfactorybulgaria/blocks": "dev-master",
+        "webfactorybulgaria/dashboard": "dev-master",
+        "webfactorybulgaria/files": "dev-master",
+        "webfactorybulgaria/galleries": "dev-master",
+        "webfactorybulgaria/groups": "dev-master",
+        "webfactorybulgaria/history": "dev-master",
+        "webfactorybulgaria/menus": "dev-master",
+        "webfactorybulgaria/pages": "dev-master",
+        "webfactorybulgaria/settings": "dev-master",
+        "webfactorybulgaria/sitemap": "dev-master",
+        "webfactorybulgaria/translations": "dev-master",
+        "webfactorybulgaria/users": "dev-master"
     },
     "require-dev": {
         "laracasts/generators": "~1.1",
@@ -86,5 +86,5 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
