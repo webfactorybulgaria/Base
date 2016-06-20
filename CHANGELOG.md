@@ -24,6 +24,11 @@ All notable changes to TypiCMS will be documented in this file.
 ```
 
 - run ```composer update```
+- in config/app.php
+```
++        Roumen\Feed\FeedServiceProvider::class,
++        Spatie\Permission\PermissionServiceProvider::class,
+```
 - run ```php artisan vendor:publish```
 - run ```php artisan migrate```
 - drop column ```users.permissions```
