@@ -1,6 +1,62 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## 4.1.0 - 2016-06-20
+### Changed
+- Translatable now works with joining tables
+### Upgrade from 4.0
+- Edit composer.json file:
+```
+- "adamwathan/form": "0.8.4",
+
+- "propaganistas/laravel-translatable-bootforms": "~1.3.1",
++ "propaganistas/laravel-translatable-bootforms": "~1.3.2",
+
++ "roumen/feed": "~2.10.1",
++ "spatie/laravel-permission": "~1.3.4",
+
+- "webfactorybulgaria/groups": "~4.0.0",
++ "webfactorybulgaria/roles": "~4.1.0",
+
+- "webfactorybulgaria/core": "~4.0.0",
++ "webfactorybulgaria/core": "~4.1.0",
+...............
+```
+
+- run ```composer update```
+- run ```php artisan vendor:publish```
+- run ```php artisan migrate```
+- drop column ```users.permissions```
+- in app/Http/Kernel.php
+```
+- \TypiCMS\Modules\Core\Http\Middleware\PublicLocale::class,
++ \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
+```
+
+- in app/Providers/AuthServiceProvider.php
+```php
+    public function boot(GateContract $gate)
+    {
+        $this->registerPolicies($gate);
+
+        $gate->before(function ($user, $ability) {
+            if ($user->isSuperUser()) {
+                return true;
+            }
+        });
+    }
+```
+
+- fix all routes from **admin.{module}.{action}** to admin::{action}-{module(s)}
+- edit or overwrite:
+```
+_navbar.blade.php
+_button-back.blade.php
+```
+- remove all files in ```resources/views/vendor/users/admin/*``` and run ```php artisan vendor:publish```
+- check all custom created modules
+
+
 ## 2.8.0 - 2016-04-13
 
 ### Changed
