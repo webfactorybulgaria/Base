@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "10ddb7353589ee95c6f0ac7d0ca240a6",
-    "content-hash": "05db62dd9a4305f036ccc7b2b6e6d561",
+    "hash": "151fb489f37e554fda2c99b37940853f",
+    "content-hash": "78082243c042aa2d0484ffc16ebc6eb0",
     "packages": [
         {
             "name": "adamwathan/bootforms",
@@ -51,16 +51,16 @@
         },
         {
             "name": "adamwathan/form",
-            "version": "v0.8.4",
+            "version": "v0.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adamwathan/form.git",
-                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d"
+                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adamwathan/form/zipball/b95e6724e55897d7947a8a06e18abac24e88198d",
-                "reference": "b95e6724e55897d7947a8a06e18abac24e88198d",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/8056cea6743de85e079d69bc43ee8e358553a9a7",
+                "reference": "8056cea6743de85e079d69bc43ee8e358553a9a7",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-03-24 23:00:52"
+            "time": "2016-05-10 01:07:01"
         },
         {
             "name": "barryvdh/elfinder-flysystem-driver",
