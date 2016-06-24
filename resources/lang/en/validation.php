@@ -138,6 +138,7 @@ return [
         'meta_keywords'    => 'Meta keywords',
         'meta_title'       => 'Meta title',
         'meta_description' => 'Meta description',
+        'meta_tags'        => 'Custom meta tags',
         'summary'          => 'Summary',
         'uri'              => 'Uri',
         'online'           => 'Online',
@@ -176,6 +177,7 @@ return [
         'css'                       => 'CSS',
         'js'                        => 'JavaScript',
         'add_to_menu'               => 'Add to menu',
+        'system_name'               => 'System Name',
 
         // Places
         'latitude'    => 'Latitude',
