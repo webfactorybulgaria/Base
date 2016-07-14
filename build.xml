@@ -96,20 +96,7 @@
                 </phingcall>
             </then>
             <else>
-                <!-- rSync project's build dir to the remote's build path -->
-                <filesync
-                    sourcedir="${project.dir}"
-                    destinationdir="${upload.username}@${upload.host}:${upload.dir}"
-                    dryrun="true"
-                    options="-vurlDIzc"
-                    itemizechanges="false"
-                    verbose="false"
-                    excludeFile="../excludes"
-                    checksum="false" />
-
-                <!-- chmod dynamic files & folders -->
-                <phingcall target="ssh-exec">
-                    <property name="ssh.exec" value="${bin.chmod} 777 ${upload.dir}/uploads ${upload.dir}/js/j.js ${upload.dir}/css/c.css" />
+                <phingcall target="deploy-rsync-application">
                 </phingcall>
             </else>
         </if>
@@ -122,12 +109,12 @@
                     <then>
                         <echo message="
 Make sure you:
-1. Edit the .env file 
-2. Put a .htaccess (Deny From All) in the framework folder.
-3. Change the path to the framework in index.php:
+1. Edit the .env file
+2. Change the path to the framework in index.php:
 require __DIR__.'/framework/bootstrap/autoload.php';
 $app = require_once __DIR__.'/framework/bootstrap/app.php';
 $app->bind('path.public', function() { return __DIR__; });
+3. Edit framework/config/elfinder.php > 'path'          => realpath(__DIR__.'/../public/uploads'), if needed
 
 
                             " />

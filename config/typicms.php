@@ -16,7 +16,7 @@ return [
     | The directory is cleaned on eloquent save, delete and composer install.
     |--------------------------------------------------------------------------
     */
-    'html_cache' => false,
+    'html_cache' => env('CACHE_HTML', false),
 
     /*
     |--------------------------------------------------------------------------
