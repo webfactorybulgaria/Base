@@ -30,5 +30,8 @@
     "selectize": "0.12.1",
     "swiper": "3.3.1",
     "vinyl-paths": "2.1.0"
+  },
+  "dependencies": {
+    "angularjs-datepicker": "^2.1.0"
   }
 }

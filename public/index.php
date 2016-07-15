@@ -1,6 +1,17 @@
 <?php
 
 /**
+ * Read html cache
+ */
+if (isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_METHOD'] === 'GET') {
+    $filename = __DIR__ . '/html/' . strtok($_SERVER["REQUEST_URI"],'?') . '/index' . $_SERVER['QUERY_STRING'] . '.html';
+    if (file_exists($filename)) {
+        $contents = file_get_contents($filename);
+        exit($contents);
+    }
+}
+
+/**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel

@@ -10,19 +10,20 @@
         $scope.itemsByPage = 100;
         var url = $location.absUrl().split('?')[0],
             moduleName = url.split('/')[4],
-            $params = {};
+            ctrl = this;
+            $scope.params = {};
 
         $scope.TypiCMS = TypiCMS;
 
         // if we query files from a gallery, we need the gallery_id value :
         if (moduleName === 'galleries' && url.split('/')[5]) {
-            $params.gallery_id = url.split('/')[5];
-            $scope.gallery_id = $params.gallery_id;
+            $scope.params.gallery_id = url.split('/')[5];
+            $scope.gallery_id = $scope.params.gallery_id;
         }
 
         // if we query menulinks menu_id value :
         if (moduleName === 'menus' && url.split('/')[5]) {
-            $params.menu_id = url.split('/')[5];
+            $scope.params.menu_id = url.split('/')[5];
             moduleName = 'menulinks';
         }
 
@@ -30,11 +31,13 @@
             $scope.models = TypiCMS.models;
             $scope.displayedModels = [].concat($scope.models);
         } else {
-            $api.query($params).$promise.then(function (all) {
+            /*
+            $api.query($scope.params).$promise.then(function (all) {
                 $scope.models = all;
                 //copy the references (you could clone ie angular.copy but then have to go through a dirty checking for the matches)
                 $scope.displayedModels = [].concat($scope.models);
             });
+            */
         }
 
         /**
@@ -42,6 +45,15 @@
          */
         $scope.checked = {
             models: []
+        };
+
+        /**
+         * Update tourprices filter
+         */
+        $scope.updateFilter = function () {
+            $scope.params.tableState.pagination.start = 0;
+            $scope.callServer($scope.params.tableState);
+            console.log('updateFilter');
         };
 
         /**
@@ -209,13 +221,16 @@
             if (!title) {
                 title = model.title;
             }
-            if (!window.confirm('Supprimer « ' + title + ' » ?')) {
+            if (!window.confirm('Delete « ' + title + ' » ?')) {
                 return false;
             }
             var index = $scope.models.indexOf(model);
             $api.delete({id: model.id}, function (data) {
                 if (index !== -1) {
                     $scope.models.splice(index, 1);
+                    if ($scope.stCtrl) {
+                        $scope.stCtrl.pipe();
+                    }
                 }
                 if (data.error) {
                     alertify.error('Error');
@@ -291,6 +306,35 @@
 
             }
         };
+
+        $scope.callServer = function (tableState, ctrl) {
+            if ( !$scope.stCtrl && ctrl ) {
+                $scope.stCtrl = ctrl;
+            }
+
+            $scope.isLoading = true;
+
+            var pagination = tableState.pagination;
+
+            var start = pagination.start || 0;     // This is NOT the page number, but the index of item in the list that you want to use to display the table.
+            var number = pagination.number || 20;  // Number of entries showed per page.
+
+            $scope.params.start = start;
+            $scope.params.number = number;
+            $scope.params.tableState = tableState;
+
+            $api.query($scope.params).$promise.then(function (result) {
+
+                $scope.models = result[0].data;
+                $scope.totalModels = result[0].total;
+                $scope.displayedModels = [].concat($scope.models);
+
+                tableState.pagination.numberOfPages = result[0].last_page;//set the number of pages so the pagination can update
+                $scope.isLoading = false;
+
+            });
+        };
+
 
     }]);
 

@@ -13,15 +13,25 @@ angular.module('smart-table').directive('stPersist', function () {
                 }
             }, true);
 
+            var tableState = ctrl.tableState();
             //fetch the table state when the directive is loaded
             if (localStorage.getItem(nameSpace)) {
                 var savedState = JSON.parse(localStorage.getItem(nameSpace));
-                var tableState = ctrl.tableState();
-
-                angular.extend(tableState, savedState);
-                ctrl.pipe();
-
+                scope.itemsByPage = savedState.pagination.number;
+            } else {
+                savedState = {};
+                if (attr.stSortDefault) {
+                  sortDefault = scope.$eval(attr.stSortDefault) !== undefined ? scope.$eval(attr.stSortDefault) : attr.stSortDefault;
+                  ctrl.tableState().sort = {
+                    'predicate': sortDefault,
+                    'reverse':   attr.stSortDefaultReverse ? true : false
+                  };
+                }
             }
+
+            angular.merge(tableState, savedState);
+
+            ctrl.pipe();
 
         }
     };

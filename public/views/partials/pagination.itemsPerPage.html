@@ -1,0 +1,14 @@
+    <div class="dropdown pagination itemsPerPage">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="show-more">{{$parent.itemsByPage}} Items per page</span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a ng-click="$parent.itemsByPage = 10">10</a></li>
+            <li><a ng-click="$parent.itemsByPage = 20">20</a></li>
+            <li><a ng-click="$parent.itemsByPage = 30">30</a></li>
+            <li><a ng-click="$parent.itemsByPage = 50">50</a></li>
+            <li><a ng-click="$parent.itemsByPage = 50">100</a></li>
+            <li><a ng-click="$parent.itemsByPage = 9999999">All</a></li>
+        </ul>
+    </div>

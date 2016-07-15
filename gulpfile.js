@@ -246,6 +246,13 @@ gulp.task('all', [
     'ckeditor'
 ]);
 
+gulp.task('admin', [
+    'less-admin',
+    'js-admin',
+    'angular-locales',
+    'ckeditor'
+]);
+
 gulp.task('default', [
     'less-public',
     'js-public',

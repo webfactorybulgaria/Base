@@ -3043,16 +3043,16 @@
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.1.2",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "c36211fb058c9f09264dd8d4abe905efc967879b"
+                "reference": "8ee9645a85cc4a7e3d8926a02a740a8565290f54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/c36211fb058c9f09264dd8d4abe905efc967879b",
-                "reference": "c36211fb058c9f09264dd8d4abe905efc967879b",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/8ee9645a85cc4a7e3d8926a02a740a8565290f54",
+                "reference": "8ee9645a85cc4a7e3d8926a02a740a8565290f54",
                 "shasum": ""
             },
             "require": {
@@ -3079,7 +3079,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-06-20 09:09:56"
+            "time": "2016-07-15 10:28:45"
         },
         {
             "name": "webfactorybulgaria/dashboard",

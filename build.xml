@@ -107,17 +107,14 @@
                 <if>
                     <equals arg1="${project.application}" arg2="admintool4" trim="true" />
                     <then>
-                        <echo message="
-Make sure you:
-1. Edit the .env file
-2. Change the path to the framework in index.php:
-require __DIR__.'/framework/bootstrap/autoload.php';
-$app = require_once __DIR__.'/framework/bootstrap/app.php';
-$app->bind('path.public', function() { return __DIR__; });
-3. Edit framework/config/elfinder.php > 'path'          => realpath(__DIR__.'/../public/uploads'), if needed
+<echo message="Make sure you:" />
+<echo message="1. Edit the .env file" />
+<echo message="2. Change the path to the framework in index.php:" />
+<echo message="require __DIR__.'/framework/bootstrap/autoload.php';" />
+<echo message="$app = require_once __DIR__.'/framework/bootstrap/app.php';" />
+<echo message="$app->bind('path.public', function() { return __DIR__; });" />
+<echo message="3. Edit framework/config/elfinder.php > 'path'          => realpath(__DIR__.'/../public/uploads'), if needed" />
 
-
-                            " />
                     </then>
                 </if>
             </then>
