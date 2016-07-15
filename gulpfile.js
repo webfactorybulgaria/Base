@@ -170,6 +170,7 @@ gulp.task('js-admin', function () {
             'node_modules/angular-resource/angular-resource.js',
             'node_modules/angular-smart-table/dist/smart-table.js',
             'node_modules/angular-ui-tree/dist/angular-ui-tree.js',
+            'node_modules/angularjs-datepicker/dist/angular-datepicker.min.js',
             // 'node_modules/vue/vue.js',
             // 'node_modules/vue-tables/lib/dist/v-client-table.js',
             'node_modules/bootstrap/js/dropdown.js',
