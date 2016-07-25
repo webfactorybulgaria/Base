@@ -7,7 +7,7 @@
 
     angular.module('typicms').controller('ListController', ['$http', '$scope', '$location', '$api', function ($http, $scope, $location, $api) {
 
-        $scope.itemsByPage = 100;
+        $scope.itemsByPage = 30;
         var url = $location.absUrl().split('?')[0],
             moduleName = url.split('/')[4],
             ctrl = this;
@@ -38,6 +38,9 @@
                 $scope.displayedModels = [].concat($scope.models);
             });
             */
+        }
+        if (TypiCMS.options) {
+            $scope.options = TypiCMS.options;
         }
 
         /**
