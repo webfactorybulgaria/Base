@@ -37,7 +37,9 @@ CKEDITOR.editorConfig = function( config ) {
     // Set the most common block elements.
     config.format_tags = 'p;h1;h2;h3;h4;h5;h6;pre';
 
-    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks';
+    config.extraPlugins = 'image2,codemirror,autocorrect,clipboard,panelbutton,oembed,justify,quicktable,showblocks,uploadimage';
+    config.uploadUrl = '/elfinder/connector';
+
     config.removePlugins = 'image';
 
     // Skin / UI
@@ -71,3 +73,46 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserWindowHeight = 500;*/
 
 };
+
+CKEDITOR.on('instanceReady', function(e) {
+    e.editor.on( 'fileUploadRequest', function( evt ) {
+        var fileLoader = evt.data.fileLoader,
+            formData = new FormData(),
+            xhr = fileLoader.xhr;
+
+        xhr.open( 'post', fileLoader.uploadUrl, true );
+        formData.append('_token', TypiCMS._token);
+        formData.append('cmd', 'upload');
+        formData.append('target', 'ldrop_'); // this is the target volume (not folder) for elfinder. starts with 'l' for LocalFileSystem
+        formData.append('overwrite', 0);
+        formData.append( 'upload[]', fileLoader.file, fileLoader.fileName );
+        fileLoader.xhr.send( formData );
+        evt.stop();
+    }, null, null, 4 );
+
+    e.editor.on( 'fileUploadResponse', function( evt ) {
+        // Prevent the default response handler.
+        evt.stop();
+
+        // Ger XHR and response.
+        var data = evt.data,
+            xhr = data.fileLoader.xhr,
+            response = JSON.parse(xhr.response);
+        if (response.added[0] && response.added[0].write) {
+            data.url = response.added[0].url;
+        } else {
+            data.message = response.warning[2];
+            evt.cancel();
+        }
+/*
+        if ( response[ 1 ] ) {
+            // Error occurred during upload.
+            data.message = response[ 1 ];
+            evt.cancel();
+        } else {
+            data.url = response[ 0 ];
+        }
+*/
+    } );
+
+} );

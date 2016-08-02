@@ -151,7 +151,13 @@ gulp.task('ckeditor', function () {
         'showblocks',
         'specialchar',
         'table',
-        'widget'
+        'widget',
+
+        'uploadwidget',
+        'filetools',
+        'notification',
+        'notificationaggregator',
+        'uploadimage'
     ];
     for (var i = 0; i < plugins.length; i++) {
         gulp.src(['node_modules/ckeditor/plugins/' + plugins[i] + '/**/*'])
@@ -259,3 +265,4 @@ gulp.task('default', [
     'js-public',
     'watch'
 ]);
+

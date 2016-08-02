@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## v4.1.8 - 2016-08-02
+- Added "drag and drop" and "copy / paste" functionality for uploading images in the WYSIWYG editor.
+
 ## 4.1.0 - 2016-06-20
 ### Changed
 - Translatable now works with joining tables

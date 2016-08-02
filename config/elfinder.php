@@ -10,7 +10,7 @@ return array(
     | The dir where to store the images (relative from public)
     |
     */
-    'dir' => ['uploads'],
+    'dir' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,21 @@ return array(
     |
     */
 
-    'roots' => null,
+    'roots' => array(
+            array(
+                'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
+                'path'          => realpath(__DIR__.'/../public/uploads'),         // path to files (REQUIRED)
+                'URL'           => '/uploads/', // URL to files (REQUIRED)
+                'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
+            ),
+            array(
+                'id' => 'drop',
+                'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
+                'path'          => realpath(__DIR__.'/../public/uploads/drop'),         // path to files (REQUIRED)
+                'URL'           => '/uploads/drop/', // URL to files (REQUIRED)
+                'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
+            ),
+        ),
 
     /*
     |--------------------------------------------------------------------------
@@ -76,15 +90,6 @@ return array(
     |
     */
 
-    'options' => array(
-        'roots' => array(
-            array(
-                'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
-                'path'          => realpath(__DIR__.'/../public/uploads'),         // path to files (REQUIRED)
-                'URL'           => '/uploads/', // URL to files (REQUIRED)
-                'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
-            )
-        )
-    ),
+    'options' => []
 
 );

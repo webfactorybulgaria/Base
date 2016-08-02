@@ -463,3 +463,15 @@ legend.cke_voice_label { display:none }
 .cke_ltr.cke_hidpi .cke_button__undo_icon { background:url(icons_hidpi.png) no-repeat 0 -2184px!important; background-size:16px!important }
 .cke_hidpi .cke_button__simplebox_icon { background:url(icons_hidpi.png) no-repeat 0 -4416px!important }
 .cke_hidpi .cke_button__spellchecker_icon { background:url(icons_hidpi.png) no-repeat 0 -2232px!important; background-size:16px!important }
+
+.cke_notifications_area{pointer-events:none}
+.cke_notification{pointer-events:auto;position:relative;margin:10px;width:300px;color:#222;border-radius:5px;text-align:center;opacity:.95;filter:alpha(opacity = 95);-webkit-animation:fadeIn .7s;animation:fadeIn .7s}
+.cke_notification_message a{color:#12306f}@-webkit-keyframes fadeIn{from{opacity:.4}to{opacity:.95}}@keyframes fadeIn{from{opacity:.4}to{opacity:.95}}
+.cke_notification_success{background:#b2d93e;border:1px solid #b2d93e}
+.cke_notification_warning{background:#e65652;border:1px solid #e65652}
+.cke_notification_info{background:#54d3ec;border:1px solid #01b2d2}
+.cke_notification_info span
+.cke_notification_progress{background-color:#01b2d2;display:block;padding:0;margin:0;height:100%;overflow:hidden;position:absolute;z-index:1}
+.cke_notification_message{position:relative;margin:4px 23px 3px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;z-index:4;text-overflow:ellipsis;overflow:hidden}
+.cke_notification_close{color:#000;position:absolute;cursor:pointer;text-align:center;height:20px;width:20px;top:2px;right:3px;padding:0;margin:0;z-index:5;opacity:.6;filter:alpha(opacity = 60)}
+.cke_notification_close:hover{color:#000;opacity:1;filter:alpha(opacity = 100)}
