@@ -24,7 +24,7 @@ return [
         |
         */
 
-        'permission' => TypiCMS\Modules\Roles\Custom\Models\Permission::class,
+        'permission' => TypiCMS\Modules\Roles\Shells\Models\Permission::class,
 
         /*
         |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
         |
         */
 
-        'role' => TypiCMS\Modules\Roles\Custom\Models\Role::class,
+        'role' => TypiCMS\Modules\Roles\Shells\Models\Role::class,
 
     ],
 

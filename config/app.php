@@ -170,19 +170,19 @@ return [
         Barryvdh\Elfinder\ElfinderServiceProvider::class,
         Roumen\Feed\FeedServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        TypiCMS\Modules\Translations\Custom\Providers\TranslationServiceProvider::class,
+        TypiCMS\Modules\Translations\Shells\Providers\TranslationServiceProvider::class,
 
         /*
          * TypiCMS Modules Service Providers.
          * Here is the place for your modules,
          * they should be set before Core Service provider.
          */
-        // TypiCMS\Modules\News\Custom\Providers\ModuleProvider::class,
+        // TypiCMS\Modules\News\Shells\Providers\ModuleProvider::class,
 
         /*
          * TypiCMS Core Service Provider...
          */
-        TypiCMS\Modules\Core\Custom\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,
     ],
 
     /*
@@ -229,8 +229,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'FileUpload' => TypiCMS\Modules\Core\Custom\Facades\FileUpload::class,
-        'TypiCMS' => TypiCMS\Modules\Core\Custom\Facades\TypiCMS::class,
+        'FileUpload' => TypiCMS\Modules\Core\Shells\Facades\FileUpload::class,
+        'TypiCMS' => TypiCMS\Modules\Core\Shells\Facades\TypiCMS::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'BootForm' => AdamWathan\BootForms\Facades\BootForm::class,
