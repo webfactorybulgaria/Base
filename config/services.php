@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Models\User'),
+        'model'  => env('STRIPE_MODEL', 'TypiCMS\Modules\Users\Custom\Models\User'),
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

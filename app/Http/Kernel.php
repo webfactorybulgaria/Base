@@ -15,7 +15,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Session\Middleware\StartSession::class,
-        \TypiCMS\Modules\Core\Http\Middleware\SetLocale::class,
+        \TypiCMS\Modules\Core\Custom\Http\Middleware\SetLocale::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Krucas\Notification\Middleware\NotificationMiddleware::class,
     ];
@@ -35,23 +35,23 @@ class Kernel extends HttpKernel
 
         'public' => [
             'web',
-            \TypiCMS\Modules\Core\Http\Middleware\PublicAccess::class,
-            \TypiCMS\Modules\Core\Http\Middleware\PublicCache::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\PublicAccess::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\PublicCache::class,
         ],
 
         'admin' => [
             'web',
             'auth',
             'authorization',
-            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
-            \TypiCMS\Modules\Core\Http\Middleware\JavaScriptData::class,
-            \TypiCMS\Modules\Core\Http\Middleware\UserPrefs::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\AdminLocale::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\JavaScriptData::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\UserPrefs::class,
         ],
 
         'api' => [
             'auth',
             'authorization',
-            \TypiCMS\Modules\Core\Http\Middleware\AdminLocale::class,
+            \TypiCMS\Modules\Core\Custom\Http\Middleware\AdminLocale::class,
             'throttle:60,1',
         ],
     ];
@@ -68,8 +68,8 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'authorization' => \TypiCMS\Modules\Core\Http\Middleware\Authorization::class,
-        'registrationAllowed' => \TypiCMS\Modules\Core\Http\Middleware\RegistrationAllowed::class,
+        'authorization' => \TypiCMS\Modules\Core\Custom\Http\Middleware\Authorization::class,
+        'registrationAllowed' => \TypiCMS\Modules\Core\Custom\Http\Middleware\RegistrationAllowed::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
