@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to TypiCMS will be documented in this file.
 
+## v4.1.11 - 2016-08-10
+- Shell classes introduced - publishing a module now only copies the shell classes which can then be customized.
+
+
 ## v4.1.8 - 2016-08-02
 - Added "drag and drop" and "copy / paste" functionality for uploading images in the WYSIWYG editor.
 

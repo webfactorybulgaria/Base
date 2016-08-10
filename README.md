@@ -122,7 +122,7 @@ If you need to customize it, [publish it](#publish-a-module)!
    ```
    composer require typicms/news
    ```
-2. Add ```TypiCMS\Modules\News\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+2. Add ```TypiCMS\Modules\News\Shells\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,```
 3. Publish views and migrations
 
    ```
@@ -144,7 +144,7 @@ This example is for a new module called Cats.
    php artisan typicms:create cats
    ```
 2. The module is in **/Modules/Cats**, you can customize it
-3. Add ```TypiCMS\Modules\Cats\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Providers\ModuleProvider::class,```
+3. Add ```TypiCMS\Modules\Cats\Shells\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,```
 4. Migrate the database
 
    ```
@@ -275,19 +275,21 @@ php artisan clear-html
 ### Publish a module
 
 If you want to modify a module, for example add some fields or a relation, you can not do it easily because each module is in vendor directory.
-The solution is to remove it from composer and copy it to the **/Modules** directory. For example, the module **Pages** will be published by running this command:
+Each TypiCMS class has its empty "Shell Class". This is an empty class which extends the base one and that is the one used in the entire CMS.
+When you publish a module all Shell classes are copied to the **/Modules** directory where you can easily override methods and properties.
+For example, the module **Pages** will be published by running this command:
 
 ```
 php artisan typicms:publish pages
 ```
 
-These steps will be executed:
+This will copy everything from **/vendor/typicms/pages/src/Shells** to **/Modules/Pages/Shells**.
 
-1. Publishing of views and migrations for Pages module.
-2. Copying of everything excepted views and migrations from **/vendor/typicms/pages/src** to **/Modules/Pages**.
-3. Running ```composer remove typicms/pages```.
+Then in order for these new classes to take precedence you will have to 
+1. Add this to your composer.json file: "TypiCMS\\Modules\\Pages\\Shells\\": "Modules/Pages/Shells/"
+2. Run `composer dump-autoload`
 
-When a module is published, it will be tracked by git and you will be able to make changes in **/Modules/Modulename** directory without loosing changes when running ```composer update```.
+This way you will gain full controll of the module and in the same time you will be able to still update the module from the main repository if needed.
 
 ### Create a module
 
