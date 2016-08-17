@@ -104,15 +104,6 @@ CKEDITOR.on('instanceReady', function(e) {
             data.message = response.warning[2];
             evt.cancel();
         }
-/*
-        if ( response[ 1 ] ) {
-            // Error occurred during upload.
-            data.message = response[ 1 ];
-            evt.cancel();
-        } else {
-            data.url = response[ 0 ];
-        }
-*/
     } );
 
 } );
