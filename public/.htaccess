@@ -13,4 +13,8 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # removes index.php from the ULR
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php(.*)\sHTTP.* [NC]
+    RewriteRule ^ %1 [R=301,L]
 </IfModule>
