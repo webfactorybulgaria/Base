@@ -1,8 +1,10 @@
 var gulp       = require('gulp'),
     gutil      = require('gulp-util'),
     less       = require('gulp-less'),
+    sass       = require('gulp-sass'),
     concat     = require('gulp-concat'),
     minifyCSS  = require('gulp-minify-css'),
+    cleanCSS   = require('gulp-clean-css'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
     livereload = require('gulp-livereload'),
@@ -11,7 +13,10 @@ var gulp       = require('gulp'),
     ngAnnotate = require('gulp-ng-annotate'),
     del        = require('del'),
     rev        = require('gulp-rev'),
-    vinylPaths = require('vinyl-paths');
+    vinylPaths = require('vinyl-paths'),
+    sourcemaps = require('gulp-sourcemaps'),
+    stripDebug = require('gulp-strip-debug');
+
 var fileMode = 436;
 
 function swallowError (error) {
@@ -19,33 +24,40 @@ function swallowError (error) {
     this.emit('end');
 }
 
-// Compile Less and save to css directory
-gulp.task('less-public', function () {
+// Compile Sass and save to css directory
+gulp.task('sass-public', function () {
 
-    return gulp.src('resources/assets/less/public/master.less')
-        .pipe(less())
+    return gulp.src('resources/assets/sass/master.scss')
+        .pipe(gutil.env.env != 'production' ? sourcemaps.init() : gutil.noop())
+        .pipe(sass({
+            includePaths: ['node_modules']
+        }))
         .on('error', swallowError)
-        .pipe(prefix('> 1%', 'ie >= 9'))
-        .pipe(minifyCSS())
+        .pipe(gutil.env.env === 'production'
+            ? prefix({ browsers: ['ie >= 11', 'iOS > 7', 'Firefox ESR', 'Opera 12.1', 'last 2 versions'] })
+            : gutil.noop())
+        .pipe(gutil.env.env === 'production' ? cleanCSS() : gutil.noop())
+        .pipe(gutil.env.env != 'production' ? sourcemaps.write() : gutil.noop())
         .pipe(rename('public.css'))
-        .pipe(gulp.dest('public/css', {mode: fileMode}));
+        .pipe(gulp.dest('public/css'));
 
 });
 
+// Compile Less and save to css directory
 gulp.task('less-admin', function () {
 
     return gulp.src('resources/assets/less/admin/master.less')
         .pipe(less())
         .on('error', swallowError)
         .pipe(prefix('last 2 versions', '> 1%', 'ie >= 9', 'Android 2'))
-        .pipe(minifyCSS())
+        .pipe(cleanCSS())
         .pipe(rename('admin.css'))
         .pipe(gulp.dest('public/css', {mode: fileMode}));
 
 });
 
 // version
-gulp.task('version', function() {
+gulp.task('version', ['sass-public', 'js-public', 'less-admin', 'js-admin'], function() {
 
     var publicDir = 'public',
         buildDir = publicDir + '/build',
@@ -114,7 +126,6 @@ gulp.task('elfinder-img', function () {
 
 });
 
-
 // Publish CKEditor
 gulp.task('ckeditor', function () {
 
@@ -152,7 +163,6 @@ gulp.task('ckeditor', function () {
         'specialchar',
         'table',
         'widget',
-
         'uploadwidget',
         'filetools',
         'notification',
@@ -197,7 +207,7 @@ gulp.task('js-admin', function () {
     return gulp.src(files)
         .pipe(concat('components.js'))
         .pipe(ngAnnotate())
-        .pipe(uglify())
+//        .pipe(uglify())
         .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir, {mode: fileMode}));
@@ -217,10 +227,11 @@ gulp.task('js-public', function () {
             'node_modules/bootstrap/js/transition.js',
             'node_modules/fancybox/dist/js/jquery.fancybox.js',
             'node_modules/swiper/dist/js/swiper.jquery.js',
-            'resources/assets/js/public/*'
+            'resources/assets/js/public/**/*.js'
         ];
 
     return gulp.src(files)
+        .pipe(stripDebug())
         .pipe(concat('components.js'))
         .pipe(uglify())
         .on('error', swallowError)
@@ -229,20 +240,26 @@ gulp.task('js-public', function () {
 
 });
 
-// Keep an eye on Less and JS files for changes…
+// Keep an eye on Less / SASS and JS files for changes…
 gulp.task('watch', function () {
-    gulp.watch('resources/assets/less/public/**/*.less', ['less-public']);
+    gulp.watch('resources/assets/sass/**/*.scss', ['sass-public']);
     gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
-    gulp.watch('resources/assets/less/*.less', ['less-public', 'less-admin']);
+    gulp.watch('resources/assets/less/*.less', ['less-admin']);
     gulp.watch('resources/assets/js/public/**/*.js', ['js-public']);
     gulp.watch('resources/assets/js/admin/**/*.js', ['js-admin']);
     gulp.watch('resources/assets/typicms/**/*.js', ['js-admin']);
-    gulp.watch(['public/css/*.css', 'public/js/admin/*.js', 'public/js/public/*.js'], ['version']);
+    // gulp.watch(['public/css/*.css', 'public/js/admin/*.js', 'public/js/public/*.js'], ['version']);
+});
+
+// Set env to production ( useful var for optimizing purposes )
+gulp.task('set-env-prod', function() {
+    gutil.env.env = 'production';
 });
 
 // What tasks does running gulp trigger?
 gulp.task('all', [
-    'less-public',
+    'set-env-prod',
+    'sass-public',
     'less-admin',
     'js-public',
     'js-admin',
@@ -250,7 +267,8 @@ gulp.task('all', [
     'angular-locales',
     'fancybox-img',
     'elfinder-img',
-    'ckeditor'
+    'ckeditor',
+    'version'
 ]);
 
 gulp.task('admin', [
@@ -261,8 +279,7 @@ gulp.task('admin', [
 ]);
 
 gulp.task('default', [
-    'less-public',
+    'sass-public',
     'js-public',
     'watch'
 ]);
-
