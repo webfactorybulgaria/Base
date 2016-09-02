@@ -201,7 +201,8 @@ gulp.task('js-admin', function () {
             'node_modules/jquery-colorbox/jquery.colorbox-min.js',
             'public/packages/barryvdh/elfinder/js/standalonepopup.js',
             'resources/assets/js/admin/*',
-            'resources/assets/typicms/**/*.js'
+            'resources/assets/typicms/app.js',
+            'resources/assets/typicms/**/!(app)*.js'
         ];
 
     return gulp.src(files)

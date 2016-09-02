@@ -8,6 +8,7 @@
     angular.module('typicms').controller('ListController', ['$http', '$scope', '$location', '$api', function ($http, $scope, $location, $api) {
 
         $scope.itemsByPage = 30;
+        $scope.initializing = true;
         var url = $location.absUrl().split('?')[0],
             moduleName = url.split('/')[4],
             ctrl = this;
@@ -334,6 +335,7 @@
 
                 tableState.pagination.numberOfPages = result[0].last_page;//set the number of pages so the pagination can update
                 $scope.isLoading = false;
+                $scope.initializing = false;
 
             });
         };
