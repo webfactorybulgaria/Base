@@ -1,11 +1,11 @@
-# TypiCMS
+# Admintool4
 
 [![Packagist](https://img.shields.io/packagist/v/typicms/base.svg?style=flat-square)]()
 [![Packagist](https://img.shields.io/packagist/l/typicms/base.svg?style=flat-square)]()
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/96951b30-0060-414c-992d-df965bd63000.svg?style=flat-square)]()
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/typicms/base.svg?style=flat-square)]()
 
-TypiCMS is a modular multilingual content management system built with [Laravel 5.2](http://laravel.com). Out of the box you can manage pages, events, news, places, sliders, etc.
+Admintool4 is a modular multilingual content management system built with [Laravel 5.2](http://laravel.com) based on TypiCMS. Out of the box you can manage pages, events, news, places, sliders, etc.
 
 ![TypiCMS screenshot](http://typicms.org/uploads/files/typicms-screenshot.png?1)
 
@@ -75,7 +75,7 @@ First install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com)
 1. Create a new project
 
    ```
-   composer create-project typicms/base mywebsite
+   composer create-project webfactorybulgaria/base mywebsite
    ```
 2. Enter the newly created folder
 
@@ -85,7 +85,7 @@ First install [Node.js](http://nodejs.org) and [gulp](http://gulpjs.com)
 3. DB migration and seed, user creation, npm installation and directory rights
 
    ```
-   php artisan typicms:install
+   php artisan admintool:install
    ```
 
 Go to http://mywebsite.local/admin and log in.
@@ -120,7 +120,7 @@ If you need to customize it, [publish it](#publish-a-module)!
 1. Install module with Composer
 
    ```
-   composer require typicms/news
+   composer require webfactorybulgaria/news
    ```
 2. Add ```TypiCMS\Modules\News\Shells\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,```
 3. Publish views and migrations
@@ -141,7 +141,7 @@ This example is for a new module called Cats.
 1. Create the module with artisan:
 
    ```
-   php artisan typicms:create cats
+   php artisan admintool:create cats
    ```
 2. The module is in **/Modules/Cats**, you can customize it
 3. Add ```TypiCMS\Modules\Cats\Shells\Providers\ModuleProvider::class,``` to **config/app.php**, before ```TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,```
@@ -242,12 +242,12 @@ Check available methods in each module’s repository.
 
 ## Artisan commands
 
-Commands are located in **/vendor/typicms/core/src/Commands**
+Commands are located in **/vendor/admintool/core/src/Commands**
 
-### Installation of TypiCMS
+### Installation of Admintool4
 
 ```
-php artisan typicms:install
+php artisan admintool:install
 ```
 
 ### Set cache key prefix in app/config/cache.php
@@ -256,7 +256,7 @@ php artisan typicms:install
 php artisan cache:prefix yourCachePrefix
 ```
 
-This command is triggered by ```typicms:install```
+This command is triggered by ```admintool:install```
 
 ### Initial migration and seed
 
@@ -264,7 +264,7 @@ This command is triggered by ```typicms:install```
 php artisan typicms:database
 ```
 
-This command is triggered by ```typicms:install```
+This command is triggered by ```admintool:install```
 
 ### Clean the directory public/html
 
@@ -280,7 +280,7 @@ When you publish a module all Shell classes are copied to the **/Modules** direc
 For example, the module **Pages** will be published by running this command:
 
 ```
-php artisan typicms:publish pages
+php artisan admintool:publish pages
 ```
 
 This will copy everything from **/vendor/typicms/pages/src/Shells** to **/Modules/Pages/Shells**.
@@ -296,26 +296,26 @@ This way you will gain full controll of the module and in the same time you will
 You can easily scaffold a module, for a module named Cats, run this command:
 
 ```
-php artisan typicms:create cats
+php artisan admintool:create cats
 ```
 
 ##Upgrade instructions
 
-[See the Wiki for upgrade instructions](https://github.com/TypiCMS/Base/wiki)
+[See the Wiki for upgrade instructions](https://github.com/webfactorybulgaria/Base/wiki)
 
 ## Change log
 
-Please see [CHANGELOG](https://github.com/TypiCMS/Base/blob/master/CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG](https://github.com/webfactorybulgaria/Base/blob/master/CHANGELOG.md) for more information what has changed recently.
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/TypiCMS/Base/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/webfactorybulgaria/Base/blob/master/CONTRIBUTING.md) for details.
 
 ## Credits
 
 - [Samuel De Backer](https://github.com/sdebacker)
-- [All contributors](https://github.com/TypiCMS/Base/graphs/contributors)
+- [All contributors](https://github.com/webfactorybulgaria/Base/graphs/contributors)
 
 ## License
 
-TypiCMS is an open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Admintool4 is an open-source software licensed under the [MIT license](http://opensource.org/licenses/MIT).
