@@ -24,20 +24,25 @@ function swallowError (error) {
     this.emit('end');
 }
 
+// Set env production ( useful var for optimizing purposes )
+// can be executed as follows >gulp all OR >gulp task-name --prod=true
+gulp.task('set-env-prod', function() {
+    gutil.env.prod = true;
+});
+
 // Compile Sass and save to css directory
 gulp.task('sass-public', function () {
-
     return gulp.src('resources/assets/sass/master.scss')
-        .pipe(gutil.env.env != 'production' ? sourcemaps.init() : gutil.noop())
+        .pipe(!gutil.env.prod ? sourcemaps.init() : gutil.noop())
         .pipe(sass({
             includePaths: ['node_modules']
         }))
         .on('error', swallowError)
-        .pipe(gutil.env.env === 'production'
+        .pipe(gutil.env.prod
             ? prefix({ browsers: ['ie >= 11', 'iOS > 7', 'Firefox ESR', 'Opera 12.1', 'last 2 versions'] })
             : gutil.noop())
-        .pipe(gutil.env.env === 'production' ? cleanCSS() : gutil.noop())
-        .pipe(gutil.env.env != 'production' ? sourcemaps.write() : gutil.noop())
+        .pipe(gutil.env.prod ? cleanCSS() : gutil.noop())
+        .pipe(!gutil.env.prod ? sourcemaps.write() : gutil.noop())
         .pipe(rename('public.css'))
         .pipe(gulp.dest('public/css'));
 
@@ -232,29 +237,25 @@ gulp.task('js-public', function () {
         ];
 
     return gulp.src(files)
-        .pipe(stripDebug())
+        .pipe(gutil.env.prod ? stripDebug() : gutil.noop())
         .pipe(concat('components.js'))
-        .pipe(uglify())
+        .pipe(gutil.env.prod ? uglify() : gutil.noop())
         .on('error', swallowError)
         .pipe(rename(destFile))
         .pipe(gulp.dest(destDir, {mode: fileMode}));
 
 });
 
-// Keep an eye on Less / SASS and JS files for changes…
-gulp.task('watch', function () {
+// Keep an eye on SASS and JS files* for changes…
+// uncomment to watch LESS/JS admin if needed
+gulp.task('watch', ['sass-public', 'js-public'], function () {
     gulp.watch('resources/assets/sass/**/*.scss', ['sass-public']);
-    gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
-    gulp.watch('resources/assets/less/*.less', ['less-admin']);
     gulp.watch('resources/assets/js/public/**/*.js', ['js-public']);
-    gulp.watch('resources/assets/js/admin/**/*.js', ['js-admin']);
-    gulp.watch('resources/assets/typicms/**/*.js', ['js-admin']);
-    // gulp.watch(['public/css/*.css', 'public/js/admin/*.js', 'public/js/public/*.js'], ['version']);
-});
+    // gulp.watch('resources/assets/less/admin/**/*.less', ['less-admin']);
+    // gulp.watch('resources/assets/less/*.less', ['less-admin']);
+    // gulp.watch('resources/assets/js/admin/**/*.js', ['js-admin']);
+    // gulp.watch('resources/assets/typicms/**/*.js', ['js-admin']);
 
-// Set env to production ( useful var for optimizing purposes )
-gulp.task('set-env-prod', function() {
-    gutil.env.env = 'production';
 });
 
 // What tasks does running gulp trigger?
