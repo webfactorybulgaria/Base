@@ -1,0 +1,46 @@
+//== Bootstrap overrides
+
+// Typography
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$border-radius-base:  0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 #999;
+$navbar-inverse-link-active-bg:             rgba(#000, .5);
+
+
+//== Fancybox image path
+$fancybox-image-url: '/components/fancybox/source';
+
+//== Font awesome files path
+$fa-font-path: "/fonts/font-awesome";
+
+
+// Spacing
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer:   1rem; //root
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  )
+);

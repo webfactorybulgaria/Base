@@ -3,7 +3,6 @@ var gulp       = require('gulp'),
     less       = require('gulp-less'),
     sass       = require('gulp-sass'),
     concat     = require('gulp-concat'),
-    minifyCSS  = require('gulp-minify-css'),
     cleanCSS   = require('gulp-clean-css'),
     uglify     = require('gulp-uglify'),
     watch      = require('gulp-watch'),
@@ -89,7 +88,7 @@ gulp.task('version', ['sass-public', 'js-public', 'less-admin', 'js-admin'], fun
 // Publish fonts
 gulp.task('fonts', function () {
 
-    var destDir = 'public/fonts';
+    var destDir = 'public/fonts/font-awesome';
 
     return gulp.src([
             'node_modules/font-awesome/fonts/*'
@@ -226,11 +225,12 @@ gulp.task('js-public', function () {
         destFile = 'components.min.js',
         files = [
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/bootstrap/js/dropdown.js',
-            'node_modules/bootstrap/js/collapse.js',
-            'node_modules/bootstrap/js/alert.js',
-            'node_modules/bootstrap/js/tab.js',
-            'node_modules/bootstrap/js/transition.js',
+            // 'node_modules/bootstrap/js/dropdown.js',
+            // 'node_modules/bootstrap/js/collapse.js',
+            // 'node_modules/bootstrap/js/alert.js',
+            // 'node_modules/bootstrap/js/tab.js',
+            // 'node_modules/bootstrap/js/transition.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
             'node_modules/fancybox/dist/js/jquery.fancybox.js',
             'node_modules/swiper/dist/js/swiper.jquery.js',
             'resources/assets/js/public/**/*.js'

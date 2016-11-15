@@ -1,0 +1,171 @@
+// Swiper common
+.swiper-slide {
+    min-height: 250px;
+}
+
+// Homepage slides
+.swiper-home {
+    position: relative;
+
+    &:hover {
+        .swiper-button-next {
+            right: 20px;
+        }
+        .swiper-button-prev {
+            left: 20px;
+        }
+    }
+
+    .swiper-button-next {
+        right: -35px;
+        transition: right .2s ease;
+    }
+    .swiper-button-prev {
+        left: -35px;
+        transition: left .2s ease;
+    }
+    .swiper-slide {
+        height: 80vh; //height also included in slides.js
+        min-height: 300px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-width: $screen-md-min) {
+            min-height: 500px;
+        }
+        @media (min-width: $screen-lg-min) {
+            min-height: 600px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: rgba(0, 0, 0, .55);
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+    }
+    .swiper-caption {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        text-align: center;
+        color: #fff;
+
+        h6 {
+            margin-top: 0;
+            font-size: 16px;
+            letter-spacing: 0.16em;
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 20px;
+            }
+        }
+        h2 {
+            font-size: 26px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 0.16em;
+            margin: 30px 0;
+            text-transform: uppercase;
+
+            @media (min-width: $screen-xs-min) {
+                font-size: 32px;
+            }
+            @media (min-width: $screen-sm-min) {
+                font-size: 62px;
+            }
+        }
+    }
+}
+
+
+// Tilt
+.tilt-front {
+    position: absolute;
+    z-index: 1;
+    bottom: -70px;
+    width: 100%;
+
+    @media (min-width: 480px){
+        bottom: -55px;
+    }
+    @media (min-width: $screen-sm-min){
+        bottom: -40px;
+    }
+    @media (min-width: $screen-md-min){
+        bottom: -30px;
+    }
+    @media (min-width: $screen-lg-min){
+        bottom: 0;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        content: '';
+        border-right: 1600px solid transparent;
+        border-bottom: 90px solid #fff;
+        border-left: 0 solid transparent;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        content: '';
+        border-right: 0 solid transparent;
+        border-bottom: 90px solid #fff;
+        border-left: 600px solid transparent;
+    }
+}
+.tilt-back {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    @media (min-width: $screen-sm-min){
+        bottom: 0;
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        content: '';
+        border-right: 1660px solid transparent;
+        border-bottom: 110px solid rgba(#000, 0.65);
+        border-left: 0 solid transparent;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        content: '';
+        border-right: 0 solid transparent;
+        border-bottom: 110px solid rgba(#000, 0.65);
+        border-left: 620px solid transparent;
+    }
+}

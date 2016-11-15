@@ -1,0 +1,52 @@
+// Lang switcher
+.lang-switcher {
+    float: right;
+    margin-left: 15px;
+
+    @media (max-width: $screen-xs-max) {
+        position: absolute;
+        right: 65px;
+        top: 0;
+    }
+
+    &.open {
+        .btn {
+            background-color: rgba(#090909, 0.5);
+        }
+    }
+
+    .btn {
+        display: block;
+        padding: 15px 5px;
+        width: 50px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #777;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(#111, 0.5);
+        border: none;
+    }
+    .dropdown-menu  {
+        left: auto;
+        right: 0;
+        min-width: 0;
+        padding: 0;
+        background-color: #333;
+        white-space: nowrap; //keep nav elements inline
+
+        > li {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+        }
+        > li > a {
+            color: #777;
+            padding: 3px 15px;
+        }
+        > .active > a {
+            color: #777;
+            background-color: #090909;
+        }
+    }
+}

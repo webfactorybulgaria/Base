@@ -6,6 +6,18 @@
 @import 'normalize.css/normalize';
 @import 'vendor/bootstrap';
 @import 'vendor/font-awesome';
+@import 'fancybox/dist/scss/jquery.fancybox';
+@import 'swiper/dist/css/swiper';
 
 // Components
+@import 'components/base-theme-common';
+
 @import 'components/header';
+@import 'components/fancybox-custom';
+@import 'components/lang-switcher';
+@import 'components/slides';
+@import 'components/galleries';
+@import 'components/news';
+
+// Utility classes
+@import 'components/spacing';

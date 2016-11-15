@@ -1,0 +1,53 @@
+// Fancybox overrides
+.fancybox-close {
+    top: -47px;
+    right: -7px;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    background-image: none;
+    color: rgba(#f1f1f1, .45);
+
+    &::before {
+        content: $fa-var-times;
+    }
+
+    &:focus,
+    &:hover {
+        color: #f1f1f1;
+        text-decoration: none;
+    }
+}
+
+.fancybox-nav {
+    // width: 60px;
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    font-family: 'FontAwesome';
+    font-size: 56px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(#f1f1f1, .5);
+    background-image: none;
+}
+
+.fancybox-nav:hover span {
+    color: #f1f1f1;
+}
+
+.fancybox-next {
+    right: -60px;
+    & span::before {
+        content: $fa-var-angle-right;
+    }
+}
+
+.fancybox-prev {
+    left: -60px;
+    & span::before {
+        content: $fa-var-angle-left;
+    }
+}

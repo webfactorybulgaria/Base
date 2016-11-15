@@ -1,0 +1,77 @@
+// Gallery main styles
+.gallery-files {
+    @include list-unstyled;
+    @include clear;
+    margin-bottom: 0;
+}
+
+.files-list-item {
+    position: relative;
+    float: left;
+    width: 50%;
+
+    @media (min-width: $screen-xs-min) {
+        width: 33.33333%;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        width: 16.66666%;
+    }
+}
+
+.files-list-image-thumb {
+    @include img-responsive;
+}
+
+// Gallery homepage
+.gallery-home {
+    padding-top: 20px;
+    text-align: center;
+
+    .gallery-title {
+        text-transform: uppercase;
+    }
+    .gallery-files {
+        margin-top: 40px;
+    }
+    .files-list-item {
+        width: 100%;
+
+        @media (min-width: $screen-xs-min) {
+            width: 50%;
+        }
+        @media (min-width: $screen-lg-min) {
+            width: 33.33333%;
+        }
+    }
+    .files-list-descr {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 10px;
+        opacity: 0;
+        visibility: hidden;
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(#000, .5);
+        transition: opacity .3s linear,
+                    visibility .3s linear;
+    }
+    .files-list-image-thumb {
+        transition: transform .25s linear;
+    }
+    .files-list-item {
+        overflow: hidden;
+
+        &:hover {
+            .files-list-image-thumb {
+                transform: scale(1.1, 1.1);
+            }
+            .files-list-descr {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
