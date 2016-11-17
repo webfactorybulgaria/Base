@@ -13,19 +13,20 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 $(function() {
-    var swipweHeight = function() {
-        swiperHeight = Math.round(window.innerHeight * 0.8); // 80% of winH
-        $('.swiper-home .swiper-slide').height(swiperHeight);
+
+    var swiperHeight = function() {
+        slideHeight = Math.round(window.innerHeight * 0.8); // 80% of winH
+        $('.swiper-home .swiper-slide').height(slideHeight);
     };
-    swipweHeight();
+
+    swiperHeight();
+
+    $(window).on('resize', function() {
+        winWResized = window.innerWidth;
+
+        if(winW != winWResized) {
+            swiperHeight();
+        }
+        winW = winWResized;
+    });
 });
-
-$(window).on('resize', function() {
-    winWResized = window.innerWidth;
-
-    if(winW != winWResized) {
-        swipweHeight();
-    }
-    winW = winWResized;
-});
-
