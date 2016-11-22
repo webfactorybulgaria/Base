@@ -8,7 +8,7 @@
 
 @section('main')
 
-    <article class="http-error-message">
+    <article class="http-error-message container">
         <h2>@lang('db.Sorry, a server error occurred').</h2>
         <p>
             @lang('db.Error :code', ['code' => '500']).

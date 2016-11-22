@@ -12,6 +12,7 @@ return [
         'es'  => 'Spanish',
         'nl'  => 'Dutch',
         'en'  => 'English',
+        'bg'  => 'Bulgarian',
         'all' => 'All languages',
     ],
     'form' => [

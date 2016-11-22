@@ -6,7 +6,7 @@
 
 @section('main')
 
-    <article class="http-error-message">
+    <article class="http-error-message container">
         <h2>@lang('db.Sorry, this page was not found').</h2>
         <p>
             @lang('db.Go to our homepage?', ['a_open' => '<a href="/">', 'a_close' => '</a>'])
