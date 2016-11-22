@@ -1,6 +1,4 @@
-/**
- * Fancyboxes
- */
+/* Fancyboxes */
 $('.fancybox').fancybox({
     prevEffect: 'none',
     nextEffect: 'none',
