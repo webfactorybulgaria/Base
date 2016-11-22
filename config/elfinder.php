@@ -67,14 +67,14 @@ return array(
     'roots' => array(
             array(
                 'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
-                'path'          => realpath(__DIR__.'/../public/uploads'),         // path to files (REQUIRED)
+                'path'          => realpath(env('PUBLIC_PATH', __DIR__.'/../public') . '/uploads'),         // path to files (REQUIRED)
                 'URL'           => '/uploads/', // URL to files (REQUIRED)
                 'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
             ),
             array(
                 'id' => 'drop',
                 'driver'        => 'LocalFileSystem',   // driver for accessing file system (REQUIRED)
-                'path'          => realpath(__DIR__.'/../public/uploads/drop'),         // path to files (REQUIRED)
+                'path'          => realpath(env('PUBLIC_PATH', __DIR__.'/../public') . '/uploads/drop'),         // path to files (REQUIRED)
                 'URL'           => '/uploads/drop/', // URL to files (REQUIRED)
                 'accessControl' => 'Barryvdh\Elfinder\Elfinder::checkAccess'             // disable and hide dot starting files (OPTIONAL)
             ),

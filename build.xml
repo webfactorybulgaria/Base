@@ -113,7 +113,6 @@
 <echo message="require __DIR__.'/framework/bootstrap/autoload.php';" />
 <echo message="$app = require_once __DIR__.'/framework/bootstrap/app.php';" />
 <echo message="$app->bind('path.public', function() { return __DIR__; });" />
-<echo message="3. Edit framework/config/elfinder.php > 'path'          => realpath(__DIR__.'/../public/uploads'), if needed" />
 
                     </then>
                 </if>
