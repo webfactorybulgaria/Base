@@ -104,4 +104,19 @@ return [
         ],
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Social Login
+    |--------------------------------------------------------------------------
+    |
+    | Here you can activate the social login feature.
+    | An auto superuser create is also available based on an email or a domain
+    |
+    */
+
+    'social_users' => true,
+    'social_guest_register' => false,
+    'social_admin_emails' => env('SOCIAL_ADMIN_EMAILS', ''), // You can add more than one by separating with comma
+    'social_admin_domains' => env('SOCIAL_ADMIN_DOMAINS', ''), // You can add more than one by separating with comma
+
 ];

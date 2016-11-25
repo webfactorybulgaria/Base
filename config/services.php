@@ -40,4 +40,10 @@ return [
         'level'        => env('ROLLBAR_LEVEL', 'debug'),
     ],
 
+    'google' => [
+        'client_id'     => env('GOOGLE_ID'),
+        'client_secret' => env('GOOGLE_SECRET'),
+        'redirect'      => env('GOOGLE_REDIRECT', 'http://'.$_SERVER["HTTP_HOST"].'/social/handle/google')
+    ],
+
 ];
