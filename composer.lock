@@ -3451,16 +3451,16 @@
         },
         {
             "name": "webfactorybulgaria/pages",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "9558e68497fd2ddf731392ac1e757f06833f36e4"
+                "reference": "330b17942abc19700bc49d1a002dcc2b2b35ad6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/9558e68497fd2ddf731392ac1e757f06833f36e4",
-                "reference": "9558e68497fd2ddf731392ac1e757f06833f36e4",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/330b17942abc19700bc49d1a002dcc2b2b35ad6a",
+                "reference": "330b17942abc19700bc49d1a002dcc2b2b35ad6a",
                 "shasum": ""
             },
             "require": {
@@ -3482,7 +3482,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-11-15 11:14:45"
+            "time": "2016-12-16 10:11:30"
         },
         {
             "name": "webfactorybulgaria/roles",
@@ -3521,16 +3521,16 @@
         },
         {
             "name": "webfactorybulgaria/settings",
-            "version": "v4.1.4",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Settings.git",
-                "reference": "8d5f90a0f68075e5d7fba50fcb044026cb6671be"
+                "reference": "4935fc10f972b37b880bf2c2dc4048e548bfd33d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/8d5f90a0f68075e5d7fba50fcb044026cb6671be",
-                "reference": "8d5f90a0f68075e5d7fba50fcb044026cb6671be",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/4935fc10f972b37b880bf2c2dc4048e548bfd33d",
+                "reference": "4935fc10f972b37b880bf2c2dc4048e548bfd33d",
                 "shasum": ""
             },
             "require": {
@@ -3552,7 +3552,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-11-04 10:43:19"
+            "time": "2016-12-08 09:39:48"
         },
         {
             "name": "webfactorybulgaria/sitemap",
