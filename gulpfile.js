@@ -43,7 +43,7 @@ gulp.task('sass-public', function () {
         .pipe(gutil.env.prod ? cleanCSS() : gutil.noop())
         .pipe(!gutil.env.prod ? sourcemaps.write() : gutil.noop())
         .pipe(rename('public.css'))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('public/css', {mode: fileMode}));
 
 });
 
