@@ -25,6 +25,7 @@ return [
         'users'    => 'Users and roles',
         'media'    => 'Media',
         'contacts' => 'Contacts',
+        'shop'     => 'Shop',
     ],
     'Index'        => 'List',
     'Create'       => 'Create',
