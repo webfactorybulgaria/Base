@@ -119,4 +119,16 @@ return [
     'social_admin_emails' => env('SOCIAL_ADMIN_EMAILS', ''), // You can add more than one by separating with comma
     'social_admin_domains' => env('SOCIAL_ADMIN_DOMAINS', ''), // You can add more than one by separating with comma
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Skip activation
+    |--------------------------------------------------------------------------
+    |
+    | By default TypiCMS requires an activation by email. 
+    | You can skip this setting this to true
+    |
+    */
+
+    'skip_activation' => false,
 ];

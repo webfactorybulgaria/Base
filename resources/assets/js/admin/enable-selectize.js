@@ -3,6 +3,7 @@ $(function () {
     $('select#galleries').selectize();
     $('select#category_id').selectize();
     $('select#page_id').selectize();
+    $('select#product_categories').selectize();
     $('select#target').selectize();
 
     /**

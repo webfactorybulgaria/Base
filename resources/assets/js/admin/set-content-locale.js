@@ -9,6 +9,8 @@ $(function () {
         $.ajax({
             type: 'GET',
             url: '/admin/_locale/' + locale
+        }).success(function () {
+            TypiCMS.locale = locale;
         }).fail(function () {
             alertify.error('Content locale couldn’t be set to ' + locale);
         });
@@ -23,7 +25,7 @@ $(function () {
             $('.form-group-translation').hide().has('[data-language="'+locale+'"]').show();
         }
         $('#active-locale').text(window.TypiCMS.locales[locale].long);
-        setContentLocale(locale);
+        if (locale != TypiCMS.locale) setContentLocale(locale);
         e.preventDefault();
     });
     $('.btn-lang-js.active').trigger('click');
