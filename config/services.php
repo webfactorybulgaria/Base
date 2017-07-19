@@ -43,7 +43,7 @@ return [
     'google' => [
         'client_id'     => env('GOOGLE_ID'),
         'client_secret' => env('GOOGLE_SECRET'),
-        'redirect'      => env('GOOGLE_REDIRECT', 'http://'.$_SERVER["HTTP_HOST"].'/social/handle/google')
+        'redirect'      => env('GOOGLE_REDIRECT', ( isset($_SERVER["HTTP_HOST"]) ? 'http://'.$_SERVER["HTTP_HOST"] : env('APP_URL') ) .'/social/handle/google')
     ],
 
 ];
