@@ -3626,16 +3626,16 @@
         },
         {
             "name": "webfactorybulgaria/users",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Users.git",
-                "reference": "05eb282ae62bcf7d4249b3b68cd908ce21cf543b"
+                "reference": "662e1fc7d54ced8c92d5f480325800e82341f09c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/05eb282ae62bcf7d4249b3b68cd908ce21cf543b",
-                "reference": "05eb282ae62bcf7d4249b3b68cd908ce21cf543b",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/662e1fc7d54ced8c92d5f480325800e82341f09c",
+                "reference": "662e1fc7d54ced8c92d5f480325800e82341f09c",
                 "shasum": ""
             },
             "require": {
@@ -3658,7 +3658,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-05-17T09:09:17+00:00"
+            "time": "2017-07-21T08:59:15+00:00"
         },
         {
             "name": "weotch/phpthumb",
