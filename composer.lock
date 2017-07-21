@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2407b4c3f048251e0416b5100b12f149",
     "content-hash": "53677be6fee51c01163ece114f6bf7a3",
     "packages": [
         {
@@ -47,7 +46,7 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
-            "time": "2016-06-09 17:00:51"
+            "time": "2016-06-09T17:00:51+00:00"
         },
         {
             "name": "adamwathan/form",
@@ -89,7 +88,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
-            "time": "2016-05-10 01:07:01"
+            "time": "2016-05-10T01:07:01+00:00"
         },
         {
             "name": "barryvdh/elfinder-flysystem-driver",
@@ -144,7 +143,7 @@
                 "elfinder",
                 "filesystem"
             ],
-            "time": "2016-04-04 14:10:16"
+            "time": "2016-04-04T14:10:16+00:00"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -198,7 +197,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2016-05-11 13:54:43"
+            "time": "2016-05-11T13:54:43+00:00"
         },
         {
             "name": "barryvdh/laravel-elfinder",
@@ -250,7 +249,7 @@
                 "laravel",
                 "tinymce"
             ],
-            "time": "2016-04-04 13:50:01"
+            "time": "2016-04-04T13:50:01+00:00"
         },
         {
             "name": "bkwld/croppa",
@@ -299,7 +298,7 @@
                 }
             ],
             "description": "Image thumbnail creation through specially formatted URLs for Laravel",
-            "time": "2016-02-19 17:04:47"
+            "time": "2016-02-19T17:04:47+00:00"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -353,7 +352,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2015-11-09 22:51:51"
+            "time": "2015-11-09T22:51:51+00:00"
         },
         {
             "name": "dimsav/laravel-translatable",
@@ -404,7 +403,7 @@
                 "laravel",
                 "translation"
             ],
-            "time": "2016-04-21 22:12:50"
+            "time": "2016-04-21T22:12:50+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -437,7 +436,7 @@
                 "MIT"
             ],
             "description": "implementation of xdg base directory specification for php",
-            "time": "2014-10-24 07:27:01"
+            "time": "2014-10-24T07:27:01+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -504,7 +503,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06 14:35:42"
+            "time": "2015-11-06T14:35:42+00:00"
         },
         {
             "name": "edvinaskrucas/notification",
@@ -552,7 +551,7 @@
                 "messages",
                 "notifications"
             ],
-            "time": "2016-01-19 14:26:18"
+            "time": "2016-01-19T14:26:18+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -614,7 +613,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2016-03-21 20:02:09"
+            "time": "2016-03-21T20:02:09+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -665,7 +664,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-05-18 16:56:05"
+            "time": "2016-05-18T16:56:05+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -723,7 +722,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-04-13 19:56:01"
+            "time": "2016-04-13T19:56:01+00:00"
         },
         {
             "name": "intervention/image",
@@ -785,7 +784,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2016-04-26 14:08:40"
+            "time": "2016-04-26T14:08:40+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -828,7 +827,7 @@
                     "homepage": "http://www.acci.cz"
                 }
             ],
-            "time": "2014-04-08 15:00:19"
+            "time": "2014-04-08T15:00:19+00:00"
         },
         {
             "name": "jakub-onderka/php-console-highlighter",
@@ -872,7 +871,7 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
-            "time": "2015-04-20 18:58:01"
+            "time": "2015-04-20T18:58:01+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -930,7 +929,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2015-12-05 17:17:57"
+            "time": "2015-12-05T17:17:57+00:00"
         },
         {
             "name": "laracasts/presenter",
@@ -976,7 +975,7 @@
                 "presenter",
                 "view"
             ],
-            "time": "2014-09-13 13:18:07"
+            "time": "2014-09-13T13:18:07+00:00"
         },
         {
             "name": "laracasts/utilities",
@@ -1020,7 +1019,7 @@
                 "javascript",
                 "laravel"
             ],
-            "time": "2015-10-01 05:16:28"
+            "time": "2015-10-01T05:16:28+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1149,7 +1148,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-06-14 01:20:40"
+            "time": "2016-06-14T01:20:40+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -1203,7 +1202,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2016-11-01 18:49:10"
+            "time": "2016-11-01T18:49:10+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1286,7 +1285,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-06-03 19:11:39"
+            "time": "2016-06-03T19:11:39+00:00"
         },
         {
             "name": "league/flysystem-cached-adapter",
@@ -1334,7 +1333,7 @@
                 }
             ],
             "description": "An adapter decorator to enable meta-data caching.",
-            "time": "2016-01-25 08:21:11"
+            "time": "2016-01-25T08:21:11+00:00"
         },
         {
             "name": "league/oauth1-client",
@@ -1397,7 +1396,7 @@
                 "tumblr",
                 "twitter"
             ],
-            "time": "2016-08-17 00:36:58"
+            "time": "2016-08-17T00:36:58+00:00"
         },
         {
             "name": "maatwebsite/laravel-sidebar",
@@ -1445,7 +1444,7 @@
                 "acp",
                 "laravel"
             ],
-            "time": "2015-06-08 19:03:23"
+            "time": "2015-06-08T19:03:23+00:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -1506,7 +1505,7 @@
                 "debug",
                 "debugbar"
             ],
-            "time": "2016-01-22 12:22:23"
+            "time": "2016-01-22T12:22:23+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1584,7 +1583,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-04-12 18:29:35"
+            "time": "2016-04-12T18:29:35+00:00"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -1628,7 +1627,7 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2016-01-26 21:23:30"
+            "time": "2016-01-26T21:23:30+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1675,7 +1674,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-11-04 20:07:17"
+            "time": "2015-11-04T20:07:17+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1726,7 +1725,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-04-19 13:41:41"
+            "time": "2016-04-19T13:41:41+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1774,7 +1773,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-18 20:34:03"
+            "time": "2016-03-18T20:34:03+00:00"
         },
         {
             "name": "propaganistas/laravel-translatable-bootforms",
@@ -1824,7 +1823,7 @@
                 "laravel",
                 "translatable"
             ],
-            "time": "2016-04-26 13:41:51"
+            "time": "2016-04-26T13:41:51+00:00"
         },
         {
             "name": "psr/cache",
@@ -1870,7 +1869,7 @@
                 "psr",
                 "psr-6"
             ],
-            "time": "2015-12-11 02:52:07"
+            "time": "2015-12-11T02:52:07+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1919,7 +1918,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2015-05-04T20:22:00+00:00"
         },
         {
             "name": "psr/log",
@@ -1957,7 +1956,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2012-12-21T11:40:51+00:00"
         },
         {
             "name": "psy/psysh",
@@ -2029,7 +2028,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2016-03-09 05:03:14"
+            "time": "2016-03-09T05:03:14+00:00"
         },
         {
             "name": "roumen/feed",
@@ -2080,7 +2079,7 @@
                 "laravel",
                 "rss"
             ],
-            "time": "2016-06-01 18:54:03"
+            "time": "2016-06-01T18:54:03+00:00"
         },
         {
             "name": "roumen/sitemap",
@@ -2128,7 +2127,7 @@
                 "generator",
                 "laravel"
             ],
-            "time": "2015-12-17 17:30:38"
+            "time": "2015-12-17T17:30:38+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -2181,7 +2180,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2016-02-27 13:07:08"
+            "time": "2016-02-27T13:07:08+00:00"
         },
         {
             "name": "studio-42/elfinder",
@@ -2239,7 +2238,7 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2016-05-30 13:46:36"
+            "time": "2016-05-30T13:46:36+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2292,7 +2291,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2016-05-01 08:45:47"
+            "time": "2016-05-01T08:45:47+00:00"
         },
         {
             "name": "symfony/console",
@@ -2352,7 +2351,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 15:08:35"
+            "time": "2016-06-06T15:08:35+00:00"
         },
         {
             "name": "symfony/debug",
@@ -2409,7 +2408,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 15:08:35"
+            "time": "2016-06-06T15:08:35+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2469,7 +2468,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 11:42:41"
+            "time": "2016-06-06T11:42:41+00:00"
         },
         {
             "name": "symfony/finder",
@@ -2518,7 +2517,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-13 18:03:36"
+            "time": "2016-05-13T18:03:36+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -2571,7 +2570,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 11:33:26"
+            "time": "2016-06-06T11:33:26+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -2653,7 +2652,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 16:52:35"
+            "time": "2016-06-06T16:52:35+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2712,7 +2711,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-05-18T14:26:46+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -2768,7 +2767,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-05-18T14:26:46+00:00"
         },
         {
             "name": "symfony/polyfill-util",
@@ -2820,7 +2819,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-05-18T14:26:46+00:00"
         },
         {
             "name": "symfony/process",
@@ -2869,7 +2868,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 11:33:26"
+            "time": "2016-06-06T11:33:26+00:00"
         },
         {
             "name": "symfony/routing",
@@ -2944,7 +2943,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-05-30 06:58:27"
+            "time": "2016-05-30T06:58:27+00:00"
         },
         {
             "name": "symfony/translation",
@@ -3008,7 +3007,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 11:33:26"
+            "time": "2016-06-06T11:33:26+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -3071,7 +3070,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-05-24 10:03:10"
+            "time": "2016-05-24T10:03:10+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3121,20 +3120,20 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-06-14T14:14:52+00:00"
         },
         {
             "name": "webfactorybulgaria/blocks",
-            "version": "v4.1.6",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Blocks.git",
-                "reference": "c2f08ddfb9b1e52f66441b7eacf3d9a6763edc49"
+                "reference": "8decb3856f839422bb5135787e1efd663891430e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/c2f08ddfb9b1e52f66441b7eacf3d9a6763edc49",
-                "reference": "c2f08ddfb9b1e52f66441b7eacf3d9a6763edc49",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Blocks/zipball/8decb3856f839422bb5135787e1efd663891430e",
+                "reference": "8decb3856f839422bb5135787e1efd663891430e",
                 "shasum": ""
             },
             "require": {
@@ -3156,20 +3155,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-09-02 10:22:10"
+            "time": "2017-05-17T08:58:22+00:00"
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.1.26",
+            "version": "v4.1.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "28891b9e6b7bd940a3b719e138f0a4e20f214087"
+                "reference": "4ee43812c43f9bf95e0bb035cca79492c008129e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/28891b9e6b7bd940a3b719e138f0a4e20f214087",
-                "reference": "28891b9e6b7bd940a3b719e138f0a4e20f214087",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/4ee43812c43f9bf95e0bb035cca79492c008129e",
+                "reference": "4ee43812c43f9bf95e0bb035cca79492c008129e",
                 "shasum": ""
             },
             "require": {
@@ -3196,20 +3195,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-01-31 09:26:36"
+            "time": "2017-05-17T08:59:33+00:00"
         },
         {
             "name": "webfactorybulgaria/dashboard",
-            "version": "v4.1.2",
+            "version": "v4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Dashboard.git",
-                "reference": "ed4d9a76683d8fb98b509c2693ead352374f4c3d"
+                "reference": "1a1b2ae13a6f10c7fc5da0bb99174c91ac6a09fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/ed4d9a76683d8fb98b509c2693ead352374f4c3d",
-                "reference": "ed4d9a76683d8fb98b509c2693ead352374f4c3d",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Dashboard/zipball/1a1b2ae13a6f10c7fc5da0bb99174c91ac6a09fe",
+                "reference": "1a1b2ae13a6f10c7fc5da0bb99174c91ac6a09fe",
                 "shasum": ""
             },
             "require": {
@@ -3231,20 +3230,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-09 09:31:00"
+            "time": "2017-05-17T09:00:18+00:00"
         },
         {
             "name": "webfactorybulgaria/files",
-            "version": "v4.1.4",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Files.git",
-                "reference": "7daed8542d15f1dd6b14bfab6c9a31f6d97c2f90"
+                "reference": "6c7250f15320c4a5f668cf155205a561b98a45bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/7daed8542d15f1dd6b14bfab6c9a31f6d97c2f90",
-                "reference": "7daed8542d15f1dd6b14bfab6c9a31f6d97c2f90",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Files/zipball/6c7250f15320c4a5f668cf155205a561b98a45bf",
+                "reference": "6c7250f15320c4a5f668cf155205a561b98a45bf",
                 "shasum": ""
             },
             "require": {
@@ -3266,20 +3265,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-09 09:32:01"
+            "time": "2017-05-17T09:00:47+00:00"
         },
         {
             "name": "webfactorybulgaria/galleries",
-            "version": "v4.1.6",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Galleries.git",
-                "reference": "755972e29f29a3bee02d7d131912858e4cffe013"
+                "reference": "10ba2fce23e219d431cba5ddb073d44ea0c86cc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/755972e29f29a3bee02d7d131912858e4cffe013",
-                "reference": "755972e29f29a3bee02d7d131912858e4cffe013",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Galleries/zipball/10ba2fce23e219d431cba5ddb073d44ea0c86cc0",
+                "reference": "10ba2fce23e219d431cba5ddb073d44ea0c86cc0",
                 "shasum": ""
             },
             "require": {
@@ -3301,20 +3300,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-11-15 10:57:18"
+            "time": "2017-05-17T09:01:16+00:00"
         },
         {
             "name": "webfactorybulgaria/history",
-            "version": "v4.1.5",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/History.git",
-                "reference": "3ead3ea99bd2c2e64d6908117bcee2eb3f57631b"
+                "reference": "6d099c3802e9443e978892da78712fc5dfe621e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/3ead3ea99bd2c2e64d6908117bcee2eb3f57631b",
-                "reference": "3ead3ea99bd2c2e64d6908117bcee2eb3f57631b",
+                "url": "https://api.github.com/repos/webfactorybulgaria/History/zipball/6d099c3802e9443e978892da78712fc5dfe621e8",
+                "reference": "6d099c3802e9443e978892da78712fc5dfe621e8",
                 "shasum": ""
             },
             "require": {
@@ -3336,20 +3335,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-23 08:05:40"
+            "time": "2017-05-17T09:01:28+00:00"
         },
         {
             "name": "webfactorybulgaria/menus",
-            "version": "v4.1.6",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Menus.git",
-                "reference": "8367a87a23fe8ad2b4df987519d41805bbf4de75"
+                "reference": "a4d939a1b79e19d1092a5d69470c162b87d10f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/8367a87a23fe8ad2b4df987519d41805bbf4de75",
-                "reference": "8367a87a23fe8ad2b4df987519d41805bbf4de75",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Menus/zipball/a4d939a1b79e19d1092a5d69470c162b87d10f9a",
+                "reference": "a4d939a1b79e19d1092a5d69470c162b87d10f9a",
                 "shasum": ""
             },
             "require": {
@@ -3371,7 +3370,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-22 09:36:18"
+            "time": "2017-07-21T08:43:44+00:00"
         },
         {
             "name": "webfactorybulgaria/nestablecollection",
@@ -3417,20 +3416,20 @@
                 "nested set",
                 "tree"
             ],
-            "time": "2015-05-13 20:26:35"
+            "time": "2015-05-13T20:26:35+00:00"
         },
         {
             "name": "webfactorybulgaria/objects",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Objects.git",
-                "reference": "5ed717f02cc06209ad7f2e931d3350464f552f4c"
+                "reference": "6d893cd0c526dcfad1a302f1bcba6a4539d0c56f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/5ed717f02cc06209ad7f2e931d3350464f552f4c",
-                "reference": "5ed717f02cc06209ad7f2e931d3350464f552f4c",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Objects/zipball/6d893cd0c526dcfad1a302f1bcba6a4539d0c56f",
+                "reference": "6d893cd0c526dcfad1a302f1bcba6a4539d0c56f",
                 "shasum": ""
             },
             "require": {
@@ -3447,20 +3446,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-09-02 10:22:51"
+            "time": "2017-05-17T09:02:49+00:00"
         },
         {
             "name": "webfactorybulgaria/pages",
-            "version": "v4.1.8",
+            "version": "v4.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "330b17942abc19700bc49d1a002dcc2b2b35ad6a"
+                "reference": "c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/330b17942abc19700bc49d1a002dcc2b2b35ad6a",
-                "reference": "330b17942abc19700bc49d1a002dcc2b2b35ad6a",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8",
+                "reference": "c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8",
                 "shasum": ""
             },
             "require": {
@@ -3482,20 +3481,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-12-16 10:11:30"
+            "time": "2017-07-21T08:43:26+00:00"
         },
         {
             "name": "webfactorybulgaria/roles",
-            "version": "v4.1.4",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Roles.git",
-                "reference": "c1c3e82779691e8cbd935eb3f0f7c2908989f4ea"
+                "reference": "49206bac1f08fe17f31e9f33bfabab9cc1e2430c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Roles/zipball/c1c3e82779691e8cbd935eb3f0f7c2908989f4ea",
-                "reference": "c1c3e82779691e8cbd935eb3f0f7c2908989f4ea",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Roles/zipball/49206bac1f08fe17f31e9f33bfabab9cc1e2430c",
+                "reference": "49206bac1f08fe17f31e9f33bfabab9cc1e2430c",
                 "shasum": ""
             },
             "require": {
@@ -3517,20 +3516,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-09 09:47:33"
+            "time": "2017-05-17T09:06:29+00:00"
         },
         {
             "name": "webfactorybulgaria/settings",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Settings.git",
-                "reference": "4935fc10f972b37b880bf2c2dc4048e548bfd33d"
+                "reference": "e1cda4b1dedb36f24bdfbc5b21575577227db5a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/4935fc10f972b37b880bf2c2dc4048e548bfd33d",
-                "reference": "4935fc10f972b37b880bf2c2dc4048e548bfd33d",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Settings/zipball/e1cda4b1dedb36f24bdfbc5b21575577227db5a9",
+                "reference": "e1cda4b1dedb36f24bdfbc5b21575577227db5a9",
                 "shasum": ""
             },
             "require": {
@@ -3552,20 +3551,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-12-08 09:39:48"
+            "time": "2017-05-17T09:06:48+00:00"
         },
         {
             "name": "webfactorybulgaria/sitemap",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Sitemap.git",
-                "reference": "0f90f6aacf415959d24ec4c5b89aa53c7c6be6dd"
+                "reference": "d238fea720e0c5c908a2ecc08c29882d6db053ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/0f90f6aacf415959d24ec4c5b89aa53c7c6be6dd",
-                "reference": "0f90f6aacf415959d24ec4c5b89aa53c7c6be6dd",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Sitemap/zipball/d238fea720e0c5c908a2ecc08c29882d6db053ab",
+                "reference": "d238fea720e0c5c908a2ecc08c29882d6db053ab",
                 "shasum": ""
             },
             "require": {
@@ -3588,20 +3587,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-08-09 06:51:58"
+            "time": "2017-05-17T09:07:24+00:00"
         },
         {
             "name": "webfactorybulgaria/translations",
-            "version": "v4.1.7",
+            "version": "v4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Translations.git",
-                "reference": "0ff1ea13ea63934c6c74099d5a57f58e87b71ac0"
+                "reference": "30d999338b89a5383308182e42cc55283065da84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/0ff1ea13ea63934c6c74099d5a57f58e87b71ac0",
-                "reference": "0ff1ea13ea63934c6c74099d5a57f58e87b71ac0",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Translations/zipball/30d999338b89a5383308182e42cc55283065da84",
+                "reference": "30d999338b89a5383308182e42cc55283065da84",
                 "shasum": ""
             },
             "require": {
@@ -3623,20 +3622,20 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-09-02 10:23:27"
+            "time": "2017-05-17T09:08:23+00:00"
         },
         {
             "name": "webfactorybulgaria/users",
-            "version": "v4.1.4",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Users.git",
-                "reference": "2d3e56159757e9e00ee107d7c16e41fbd8190072"
+                "reference": "05eb282ae62bcf7d4249b3b68cd908ce21cf543b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/2d3e56159757e9e00ee107d7c16e41fbd8190072",
-                "reference": "2d3e56159757e9e00ee107d7c16e41fbd8190072",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Users/zipball/05eb282ae62bcf7d4249b3b68cd908ce21cf543b",
+                "reference": "05eb282ae62bcf7d4249b3b68cd908ce21cf543b",
                 "shasum": ""
             },
             "require": {
@@ -3659,7 +3658,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2016-11-25 10:04:09"
+            "time": "2017-05-17T09:09:17+00:00"
         },
         {
             "name": "weotch/phpthumb",
@@ -3694,7 +3693,7 @@
                 }
             ],
             "description": "Fork of PHPThumb that adds auto-image rotation based on EXIF data and composer support",
-            "time": "2015-05-12 22:56:19"
+            "time": "2015-05-12T22:56:19+00:00"
         }
     ],
     "packages-dev": [
@@ -3750,7 +3749,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14 21:17:01"
+            "time": "2015-06-14T21:17:01+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -3798,7 +3797,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-04-29 12:21:54"
+            "time": "2016-04-29T12:21:54+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -3843,7 +3842,7 @@
             "keywords": [
                 "test"
             ],
-            "time": "2015-05-11 14:41:42"
+            "time": "2015-05-11T14:41:42+00:00"
         },
         {
             "name": "laracasts/generators",
@@ -3887,19 +3886,19 @@
                 "generators",
                 "laravel"
             ],
-            "time": "2015-12-31 18:44:32"
+            "time": "2015-12-31T18:44:32+00:00"
         },
         {
             "name": "mockery/mockery",
             "version": "0.9.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
                 "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2",
                 "shasum": ""
             },
@@ -3952,7 +3951,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2016-05-22 21:52:33"
+            "time": "2016-05-22T21:52:33+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4006,7 +4005,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2015-12-27 11:43:31"
+            "time": "2015-12-27T11:43:31+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -4051,7 +4050,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-06-10 09:48:41"
+            "time": "2016-06-10T09:48:41+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4098,7 +4097,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-06-10 07:14:17"
+            "time": "2016-06-10T07:14:17+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -4160,7 +4159,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2016-06-07 08:13:47"
+            "time": "2016-06-07T08:13:47+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4222,7 +4221,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-06 15:47:00"
+            "time": "2015-10-06T15:47:00+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4269,7 +4268,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2015-06-21 13:08:43"
+            "time": "2015-06-21T13:08:43+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -4310,7 +4309,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21 13:50:34"
+            "time": "2015-06-21T13:50:34+00:00"
         },
         {
             "name": "phpunit/php-timer",
@@ -4354,7 +4353,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12 18:03:57"
+            "time": "2016-05-12T18:03:57+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -4403,7 +4402,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-09-15 10:49:45"
+            "time": "2015-09-15T10:49:45+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -4475,7 +4474,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-05-17 03:09:28"
+            "time": "2016-05-17T03:09:28+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4531,7 +4530,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-10-02 06:51:40"
+            "time": "2015-10-02T06:51:40+00:00"
         },
         {
             "name": "sebastian/comparator",
@@ -4595,7 +4594,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2015-07-26 15:48:44"
+            "time": "2015-07-26T15:48:44+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -4647,7 +4646,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08 07:14:41"
+            "time": "2015-12-08T07:14:41+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -4697,7 +4696,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-05-17 03:18:57"
+            "time": "2016-05-17T03:18:57+00:00"
         },
         {
             "name": "sebastian/exporter",
@@ -4763,7 +4762,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-06-21 07:55:53"
+            "time": "2015-06-21T07:55:53+00:00"
         },
         {
             "name": "sebastian/global-state",
@@ -4814,7 +4813,7 @@
             "keywords": [
                 "global state"
             ],
-            "time": "2015-10-12 03:26:01"
+            "time": "2015-10-12T03:26:01+00:00"
         },
         {
             "name": "sebastian/recursion-context",
@@ -4867,7 +4866,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2015-11-11 19:50:13"
+            "time": "2015-11-11T19:50:13+00:00"
         },
         {
             "name": "sebastian/version",
@@ -4902,7 +4901,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-06-21 13:59:46"
+            "time": "2015-06-21T13:59:46+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -4955,7 +4954,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-06 11:33:26"
+            "time": "2016-06-06T11:33:26+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -5011,7 +5010,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-12 18:09:53"
+            "time": "2016-04-12T18:09:53+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -5060,7 +5059,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-14 11:18:07"
+            "time": "2016-06-14T11:18:07+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -5109,7 +5108,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2015-08-24 13:29:44"
+            "time": "2015-08-24T13:29:44+00:00"
         }
     ],
     "aliases": [],
