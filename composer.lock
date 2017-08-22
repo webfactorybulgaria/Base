@@ -46,6 +46,7 @@
                 }
             ],
             "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
+            "abandoned": true,
             "time": "2016-06-09T17:00:51+00:00"
         },
         {
@@ -88,6 +89,7 @@
                 }
             ],
             "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
+            "abandoned": true,
             "time": "2016-05-10T01:07:01+00:00"
         },
         {
@@ -3159,16 +3161,16 @@
         },
         {
             "name": "webfactorybulgaria/core",
-            "version": "v4.1.30",
+            "version": "v4.1.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Core.git",
-                "reference": "4ee43812c43f9bf95e0bb035cca79492c008129e"
+                "reference": "f7afb421c5513c81d81bcb080b9708b5f640a2fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/4ee43812c43f9bf95e0bb035cca79492c008129e",
-                "reference": "4ee43812c43f9bf95e0bb035cca79492c008129e",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Core/zipball/f7afb421c5513c81d81bcb080b9708b5f640a2fd",
+                "reference": "f7afb421c5513c81d81bcb080b9708b5f640a2fd",
                 "shasum": ""
             },
             "require": {
@@ -3195,7 +3197,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-05-17T08:59:33+00:00"
+            "time": "2017-07-27T11:01:13+00:00"
         },
         {
             "name": "webfactorybulgaria/dashboard",
@@ -3450,16 +3452,16 @@
         },
         {
             "name": "webfactorybulgaria/pages",
-            "version": "v4.1.11",
+            "version": "v4.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactorybulgaria/Pages.git",
-                "reference": "c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8"
+                "reference": "88bdc9032075fa02cf20b95c506ad1f45ea6dc99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8",
-                "reference": "c2a57a7a1ba07d6a9bb058b71ffbaad6e4ce9ec8",
+                "url": "https://api.github.com/repos/webfactorybulgaria/Pages/zipball/88bdc9032075fa02cf20b95c506ad1f45ea6dc99",
+                "reference": "88bdc9032075fa02cf20b95c506ad1f45ea6dc99",
                 "shasum": ""
             },
             "require": {
@@ -3481,7 +3483,7 @@
                     "email": "sdebacker@gmail.com"
                 }
             ],
-            "time": "2017-07-21T08:43:26+00:00"
+            "time": "2017-08-21T09:00:08+00:00"
         },
         {
             "name": "webfactorybulgaria/roles",
