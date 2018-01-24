@@ -40,7 +40,7 @@
         "webfactorybulgaria/settings": "~4.1.0",
         "webfactorybulgaria/sitemap": "~4.1.0",
         "webfactorybulgaria/translations": "~4.1.0",
-        "webfactorybulgaria/users": "~4.1.0",
+        "webfactorybulgaria/users": "~4.2.0",
         "adamwathan/form": "~0.8.9"
     },
     "require-dev": {
