@@ -183,6 +183,8 @@ return [
          * TypiCMS Core Service Provider...
          */
         TypiCMS\Modules\Core\Shells\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Jobs\Shells\Providers\ModuleProvider::class,
+        TypiCMS\Modules\Candidates\Shells\Providers\ModuleProvider::class
     ],
 
     /*

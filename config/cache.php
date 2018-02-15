@@ -74,6 +74,6 @@ return [
     |
     */
 
-    'prefix' => 'admintool4',
+    'prefix' => 'jobs',
 
 ];
